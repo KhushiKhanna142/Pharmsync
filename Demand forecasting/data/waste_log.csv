@@ -1,0 +1,201 @@
+med_name,waste_qty,cost_per_unit,total_loss,waste_reason,event_date
+Metformin,5,65.72,328.6,Expired,2025-12-05
+Augmentin,4,189.18,756.72,Damaged,2025-09-12
+Pantoprazole,6,466.63,2799.78,Temperature Excursion,2025-12-09
+Dolo 650,20,51.77,1035.4,Expired,2025-08-24
+Pan 40,15,350.42,5256.3,Damaged,2025-10-04
+Pan 40,7,285.43,1998.01,Temperature Excursion,2025-10-09
+Pantoprazole,11,187.17,2058.87,Damaged,2025-07-16
+Azithral,13,333.81,4339.53,Expired,2025-11-19
+Domperidone,18,279.59,5032.62,Temperature Excursion,2025-11-26
+Dolo 650,6,415.89,2495.34,Expired,2025-07-03
+Atorvastatin,17,477.23,8112.91,Damaged,2025-08-24
+Pan 40,14,425.07,5950.98,Damaged,2025-09-02
+Dolo 650,6,11.49,68.94,Damaged,2025-08-29
+Pan 40,14,322.54,4515.56,Damaged,2025-07-31
+Amoxicillin,11,192.4,2116.4,Expired,2025-09-22
+Pantoprazole,20,43.8,876.0,Expired,2025-07-17
+Augmentin,16,439.23,7027.68,Expired,2025-10-28
+Azithral,3,39.25,117.75,Temperature Excursion,2025-06-19
+Dolo 650,4,20.81,83.24,Damaged,2025-08-15
+Ibuprofen,16,198.84,3181.44,Expired,2025-08-02
+Paracetamol,10,411.25,4112.5,Expired,2025-09-07
+Pan 40,11,110.18,1211.98,Expired,2025-07-05
+Cetirizine,3,201.82,605.46,Expired,2025-06-17
+Domperidone,18,148.41,2671.38,Expired,2025-12-06
+Paracetamol,19,281.13,5341.47,Temperature Excursion,2025-11-23
+Pan 40,15,41.57,623.55,Expired,2025-09-23
+Cipcal 500,4,110.56,442.24,Expired,2025-11-28
+Atorvastatin,5,153.74,768.7,Damaged,2025-06-26
+Metformin,2,326.53,653.06,Damaged,2025-12-09
+Aspirin,17,292.49,4972.33,Expired,2025-11-25
+Atorvastatin,9,265.87,2392.83,Expired,2025-11-11
+Amoxicillin,9,179.83,1618.47,Expired,2025-06-25
+Metformin,12,417.57,5010.84,Damaged,2025-11-11
+Augmentin,3,127.46,382.38,Expired,2025-12-06
+Pan 40,15,202.12,3031.8,Expired,2025-08-13
+Cipcal 500,17,191.34,3252.78,Expired,2025-08-13
+Azithral,18,104.04,1872.72,Damaged,2025-06-24
+Dolo 650,15,235.28,3529.2,Expired,2025-06-20
+Aspirin,2,383.64,767.28,Damaged,2025-06-30
+Domperidone,12,429.58,5154.96,Expired,2025-08-19
+Pan 40,20,303.38,6067.6,Damaged,2025-08-26
+Azithral,3,188.85,566.55,Expired,2025-10-25
+Cipcal 500,19,420.06,7981.14,Damaged,2025-08-26
+Metformin,1,132.22,132.22,Expired,2025-09-05
+Pantoprazole,12,107.1,1285.2,Damaged,2025-07-20
+Dolo 650,20,28.16,563.2,Expired,2025-07-01
+Ibuprofen,13,424.23,5514.99,Expired,2025-07-13
+Pantoprazole,20,225.83,4516.6,Expired,2025-08-26
+Domperidone,5,186.9,934.5,Damaged,2025-08-05
+Pan 40,4,290.42,1161.68,Damaged,2025-08-29
+Amoxicillin,5,445.72,2228.6,Damaged,2025-07-28
+Augmentin,3,495.73,1487.19,Expired,2025-12-09
+Ibuprofen,4,490.25,1961.0,Damaged,2025-11-15
+Paracetamol,8,476.64,3813.12,Damaged,2025-09-08
+Amoxicillin,9,132.09,1188.81,Damaged,2025-11-09
+Telmisartan,2,26.45,52.9,Temperature Excursion,2025-10-08
+Pan 40,7,263.25,1842.75,Damaged,2025-08-24
+Ibuprofen,14,310.2,4342.8,Damaged,2025-10-20
+Dolo 650,1,242.07,242.07,Damaged,2025-10-14
+Azithral,16,196.66,3146.56,Expired,2025-09-21
+Cetirizine,3,44.31,132.93,Damaged,2025-12-02
+Atorvastatin,17,131.67,2238.39,Expired,2025-08-03
+Aspirin,19,421.08,8000.52,Expired,2025-07-18
+Atorvastatin,10,446.52,4465.2,Damaged,2025-11-17
+Metformin,7,372.72,2609.04,Expired,2025-09-14
+Pantoprazole,4,483.54,1934.16,Damaged,2025-09-16
+Pantoprazole,15,246.31,3694.65,Expired,2025-08-19
+Cipcal 500,15,329.57,4943.55,Expired,2025-10-16
+Ibuprofen,19,49.26,935.94,Expired,2025-08-16
+Augmentin,5,447.04,2235.2,Expired,2025-11-15
+Pan 40,16,295.74,4731.84,Expired,2025-07-02
+Domperidone,11,357.17,3928.87,Expired,2025-07-15
+Dolo 650,14,120.8,1691.2,Expired,2025-11-13
+Paracetamol,17,90.76,1542.92,Expired,2025-10-28
+Domperidone,6,448.99,2693.94,Expired,2025-09-30
+Azithral,4,130.95,523.8,Expired,2025-07-15
+Metformin,9,318.29,2864.61,Expired,2025-10-25
+Pantoprazole,18,198.01,3564.18,Expired,2025-10-02
+Domperidone,11,438.73,4826.03,Expired,2025-10-22
+Augmentin,8,418.4,3347.2,Damaged,2025-07-24
+Amoxicillin,16,294.8,4716.8,Damaged,2025-11-08
+Domperidone,14,330.41,4625.74,Damaged,2025-10-19
+Domperidone,19,328.86,6248.34,Damaged,2025-08-13
+Augmentin,16,479.7,7675.2,Temperature Excursion,2025-08-27
+Cetirizine,13,32.6,423.8,Damaged,2025-08-08
+Pan 40,19,424.26,8060.94,Expired,2025-06-14
+Cetirizine,7,458.34,3208.38,Expired,2025-10-25
+Azithral,13,87.89,1142.57,Expired,2025-07-03
+Pantoprazole,14,73.86,1034.04,Expired,2025-10-21
+Azithral,3,234.57,703.71,Expired,2025-10-13
+Ibuprofen,9,117.57,1058.13,Expired,2025-08-19
+Augmentin,19,348.75,6626.25,Expired,2025-08-20
+Dolo 650,9,185.1,1665.9,Damaged,2025-08-30
+Amoxicillin,9,87.77,789.93,Expired,2025-08-08
+Dolo 650,10,423.53,4235.3,Damaged,2025-12-09
+Paracetamol,1,223.84,223.84,Expired,2025-12-02
+Cipcal 500,2,474.44,948.88,Temperature Excursion,2025-11-27
+Azithral,17,72.31,1229.27,Temperature Excursion,2025-11-28
+Aspirin,2,309.64,619.28,Expired,2025-11-29
+Amoxicillin,6,202.75,1216.5,Damaged,2025-11-14
+Dolo 650,12,324.35,3892.2,Expired,2025-10-27
+Azithral,11,114.42,1258.62,Expired,2025-10-04
+Paracetamol,13,210.36,2734.68,Damaged,2025-07-17
+Telmisartan,9,338.59,3047.31,Expired,2025-11-21
+Dolo 650,3,432.66,1297.98,Expired,2025-06-23
+Cetirizine,20,134.67,2693.4,Damaged,2025-07-29
+Cetirizine,20,456.07,9121.4,Damaged,2025-10-04
+Amoxicillin,2,318.63,637.26,Expired,2025-09-04
+Pan 40,7,183.18,1282.26,Expired,2025-07-04
+Dolo 650,8,390.7,3125.6,Temperature Excursion,2025-12-03
+Paracetamol,3,153.38,460.14,Damaged,2025-09-18
+Paracetamol,15,40.34,605.1,Expired,2025-09-25
+Pantoprazole,18,45.88,825.84,Damaged,2025-08-31
+Domperidone,5,126.64,633.2,Damaged,2025-11-20
+Pan 40,15,351.51,5272.65,Expired,2025-11-20
+Amoxicillin,5,463.89,2319.45,Damaged,2025-07-13
+Cetirizine,11,310.73,3418.03,Expired,2025-11-29
+Pan 40,5,452.1,2260.5,Expired,2025-10-23
+Azithral,16,27.45,439.2,Expired,2025-08-03
+Metformin,16,52.04,832.64,Damaged,2025-09-27
+Pan 40,2,118.19,236.38,Damaged,2025-07-10
+Dolo 650,18,290.31,5225.58,Expired,2025-07-29
+Telmisartan,15,186.58,2798.7,Expired,2025-09-28
+Dolo 650,20,264.18,5283.6,Expired,2025-11-26
+Paracetamol,19,122.45,2326.55,Expired,2025-09-02
+Telmisartan,19,233.55,4437.45,Damaged,2025-10-30
+Augmentin,15,313.58,4703.7,Expired,2025-11-15
+Pan 40,1,355.43,355.43,Expired,2025-08-04
+Dolo 650,4,105.5,422.0,Expired,2025-08-28
+Pantoprazole,19,358.58,6813.02,Damaged,2025-11-03
+Pan 40,2,390.53,781.06,Expired,2025-07-21
+Azithral,17,479.74,8155.58,Expired,2025-09-23
+Telmisartan,20,447.23,8944.6,Expired,2025-07-30
+Cipcal 500,1,446.51,446.51,Expired,2025-08-23
+Cetirizine,7,151.58,1061.06,Expired,2025-11-04
+Augmentin,4,328.42,1313.68,Damaged,2025-12-05
+Azithral,2,386.29,772.58,Damaged,2025-08-05
+Augmentin,14,126.14,1765.96,Expired,2025-10-21
+Telmisartan,11,396.57,4362.27,Expired,2025-07-17
+Amoxicillin,7,453.63,3175.41,Expired,2025-11-07
+Augmentin,14,157.39,2203.46,Expired,2025-10-08
+Ibuprofen,20,369.05,7381.0,Damaged,2025-07-11
+Paracetamol,7,172.68,1208.76,Damaged,2025-07-16
+Metformin,20,405.24,8104.8,Expired,2025-11-05
+Cetirizine,16,234.44,3751.04,Expired,2025-10-26
+Dolo 650,14,255.18,3572.52,Expired,2025-11-23
+Aspirin,5,134.56,672.8,Expired,2025-09-13
+Pan 40,11,478.16,5259.76,Expired,2025-10-18
+Ibuprofen,13,20.9,271.7,Damaged,2025-10-25
+Paracetamol,17,482.26,8198.42,Expired,2025-08-18
+Cetirizine,15,374.14,5612.1,Damaged,2025-07-01
+Paracetamol,8,484.13,3873.04,Damaged,2025-09-13
+Azithral,15,152.39,2285.85,Temperature Excursion,2025-08-18
+Azithral,4,376.26,1505.04,Expired,2025-06-14
+Paracetamol,14,375.95,5263.3,Expired,2025-11-16
+Azithral,9,433.5,3901.5,Expired,2025-08-01
+Atorvastatin,8,487.2,3897.6,Damaged,2025-11-18
+Cipcal 500,19,261.2,4962.8,Expired,2025-06-28
+Dolo 650,12,39.01,468.12,Expired,2025-11-17
+Ibuprofen,11,188.31,2071.41,Expired,2025-08-09
+Telmisartan,17,369.58,6282.86,Expired,2025-07-19
+Dolo 650,8,109.26,874.08,Expired,2025-11-14
+Domperidone,20,411.71,8234.2,Expired,2025-07-21
+Azithral,10,423.54,4235.4,Expired,2025-11-07
+Azithral,16,485.48,7767.68,Expired,2025-09-13
+Aspirin,9,385.36,3468.24,Expired,2025-12-04
+Amoxicillin,9,432.67,3894.03,Temperature Excursion,2025-08-28
+Cipcal 500,4,142.07,568.28,Damaged,2025-07-16
+Ibuprofen,18,374.35,6738.3,Expired,2025-06-27
+Cipcal 500,2,6.87,13.74,Expired,2025-06-28
+Pan 40,15,181.18,2717.7,Expired,2025-11-13
+Telmisartan,19,163.08,3098.52,Expired,2025-07-07
+Ibuprofen,20,5.93,118.6,Expired,2025-09-25
+Azithral,12,332.14,3985.68,Damaged,2025-11-27
+Dolo 650,19,135.81,2580.39,Damaged,2025-06-14
+Paracetamol,9,328.91,2960.19,Damaged,2025-08-20
+Metformin,19,228.07,4333.33,Expired,2025-08-18
+Domperidone,17,378.64,6436.88,Damaged,2025-10-05
+Dolo 650,7,135.63,949.41,Expired,2025-08-25
+Pan 40,6,94.48,566.88,Expired,2025-08-02
+Augmentin,18,110.78,1994.04,Damaged,2025-11-15
+Augmentin,15,124.3,1864.5,Temperature Excursion,2025-11-15
+Augmentin,14,480.1,6721.4,Expired,2025-08-08
+Telmisartan,17,169.36,2879.12,Expired,2025-11-24
+Domperidone,3,404.6,1213.8,Temperature Excursion,2025-07-15
+Metformin,3,492.44,1477.32,Expired,2025-06-16
+Amoxicillin,3,52.34,157.02,Temperature Excursion,2025-12-04
+Cipcal 500,2,186.03,372.06,Expired,2025-08-06
+Augmentin,16,156.39,2502.24,Expired,2025-09-02
+Aspirin,18,229.61,4132.98,Damaged,2025-10-16
+Metformin,14,223.07,3122.98,Temperature Excursion,2025-06-28
+Telmisartan,18,45.77,823.86,Damaged,2025-11-28
+Atorvastatin,12,423.93,5087.16,Expired,2025-07-15
+Aspirin,15,206.83,3102.45,Temperature Excursion,2025-08-16
+Cipcal 500,10,141.82,1418.2,Temperature Excursion,2025-10-25
+Aspirin,19,188.99,3590.81,Expired,2025-11-16
+Telmisartan,17,493.67,8392.39,Expired,2025-10-10
+Ibuprofen,6,424.19,2545.14,Damaged,2025-07-12
+Ibuprofen,17,283.11,4812.87,Expired,2025-10-08
+Amoxicillin,2,60.0,120.0,Expired,2025-06-27
