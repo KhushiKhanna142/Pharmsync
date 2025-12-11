@@ -46,6 +46,20 @@ export default function Dashboard() {
         />
       </div>
 
+      {/* Outbreak Status Widget */}
+      <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 flex items-center justify-between shadow-sm animate-in fade-in slide-in-from-top-2">
+        <div className="flex items-center gap-4">
+          <div className="p-2 bg-blue-100 rounded-full">
+            <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <div>
+            <h3 className="font-bold text-blue-900">Local Outbreak Status</h3>
+            <p className="text-sm text-blue-700">Flu Outbreak in Mumbai | Peak expected Day 4</p>
+          </div>
+        </div>
+        <a href="/outbreak" className="text-sm font-semibold text-blue-600 hover:text-blue-800 hover:underline">View Intel →</a>
+      </div>
+
       {/* Charts Section */}
       <div className="grid gap-6 lg:grid-cols-2">
         <DemandChart />

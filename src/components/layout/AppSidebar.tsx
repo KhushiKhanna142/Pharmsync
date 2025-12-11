@@ -10,6 +10,7 @@ import {
   Menu,
   X,
   LineChart,
+  Activity,
 } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -18,8 +19,19 @@ const navItems = [
   { title: "Dashboard", href: "/", icon: LayoutDashboard },
   { title: "Inventory", href: "/inventory", icon: Package },
   { title: "Incoming Scripts", href: "/scripts", icon: FileText },
-  { title: "Forecasting", href: "/forecasting", icon: LineChart },
-  { title: "Analytics", href: "/analytics", icon: BarChart3 },
+  {
+    title: "Forecasting",
+    href: "/forecasting", // Changed 'url' to 'href'
+    icon: LineChart,
+  },
+  {
+    title: "Outbreak Intel",
+    href: "/outbreak", // Changed 'url' to 'href'
+    icon: Activity,
+  },
+  {
+    title: "Analytics", href: "/analytics", icon: BarChart3
+  },
   { title: "Settings", href: "/settings", icon: Settings },
 ];
 

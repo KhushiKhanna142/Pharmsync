@@ -40,9 +40,11 @@ export default function Inventory() {
           quantity: String(item.quantity ?? item.Qty_On_Hand ?? item.qty ?? "0"),
           expiry_date: String(item.expiry_date || item.Expiry_Date || item.expiry || ""),
           batch_id: String(item.batch_id || item.Batch_ID || item.batch || "-"),
-          status: String(item.status || "Unknown")
+          status: String(item.status || "Unknown"),
+          is_outbreak_col: String(item.is_outbreak || "false")
         }));
         setInventoryData(formattedData);
+        setColumnMapping(prev => ({ ...prev, isOutbreak: "is_outbreak_col" }));
       } else {
         console.error("Data received is not an array:", data);
       }

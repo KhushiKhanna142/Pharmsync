@@ -145,23 +145,38 @@ def get_waste_alerts():
         """)
         
         with engine.connect() as conn:
+            # Get Outbreak Meds for Risk Mitigation
+            outbreak_meds, _ = get_active_outbreaks(conn)
+
             result = conn.execute(query)
             rows = result.mappings().all()
             
             alerts = []
             for r in rows:
                 days = r['time_left_interval'].days if r['time_left_interval'] else 0
+                med_name = r['med_name']
+                
+                # OUTBREAK LOGIC 2: Expiry Risk Mitigation
+                mitigated = False
+                original_level = ""
                 
                 if days < 15: level = "Critical"
                 elif days < 30: level = "High"
                 else: level = "Moderate"
                 
+                original_level = level
+                
+                if med_name in outbreak_meds and level in ["Critical", "High"]:
+                    level = "Mitigated (Outbreak Reserve)"
+                    mitigated = True
+                
                 alerts.append({
-                    "med_name": r['med_name'],
+                    "med_name": med_name,
                     "batches_at_risk": r['batches_at_risk'],
                     "total_quantity": r['total_quantity'],
                     "earliest_expiry_days": max(0, days),
-                    "risk_level": level
+                    "risk_level": level,
+                    "mitigated": mitigated # New Field
                 })
             return alerts
 
@@ -173,75 +188,109 @@ def get_waste_alerts():
              pass
          return []
 
+# --- HELPER: Outbreak Intelligence ---
+def get_active_outbreaks(conn):
+    """
+    Fetches active outbreaks and returns a set of affected medicines and metadata.
+    """
+    try:
+        query = text("""
+            SELECT * FROM outbreak_forecasts 
+            WHERE end_date >= NOW() AND start_date <= NOW()
+        """)
+        rows = conn.execute(query).mappings().all()
+        
+        affected_meds = set()
+        outbreak_info = []
+        
+        import json
+        for r in rows:
+            meds = json.loads(r['affected_meds']) if r['affected_meds'] else []
+            for m in meds:
+                affected_meds.add(m)
+            outbreak_info.append({
+                "name": r['outbreak_name'],
+                "risk": r['risk_level'],
+                "meds": meds
+            })
+            
+        return affected_meds, outbreak_info
+    except Exception as e:
+        print(f"Outbreak Fetch Error: {e}")
+        return set(), []
+
+# --- ENDPOINTS ---
+
 @app.get("/reorder")
 def get_reorder_recommendations():
-    """Returns reorder recommendations using DB Inventory + Forecast CSV"""
+    """Returns reorder recommendations using DB Inventory + Forecast CSV + Outbreak Intel"""
     try:
         recommendations = []
         
-        # 1. Get Inventory (Live from DB)
-        inventory_map = {}
         with engine.connect() as conn:
+            # 0. Get Outbreak Data
+            outbreak_meds, outbreak_info = get_active_outbreaks(conn)
+            
+            # 1. Get Inventory (Live from DB)
+            inventory_map = {}
             # Group by med_name to get total Qty across all batches
             query = text("SELECT med_name, SUM(quantity) as total_qty FROM inventory GROUP BY med_name")
             rows = conn.execute(query).mappings().all()
             inventory_map = {r['med_name']: r['total_qty'] for r in rows}
 
-        # 2. Get Forecast Demand (Avg Daily Sales from Forecast CSV)
-        # Note: Ideally forecasts should also be in DB, but CSV is current source of truth for ML output
-        med_demand = {}
-        if os.path.exists(FORECAST_PATH):
-            df_forecast = pd.read_csv(FORECAST_PATH)
-            # If granular data exists
-            if 'med_name' in df_forecast.columns:
-                 # Group by med and avg across forecast horizon
-                 demand_series = df_forecast.groupby('med_name')['predicted_sales'].mean()
-                 med_demand = demand_series.to_dict()
-            else:
-                 # Fallback for simple global forecast (demo mode)
-                 global_avg = df_forecast['predicted_sales'].mean()
-                 # Distribute to known meds
-                 for m in inventory_map.keys():
-                     med_demand[m] = global_avg * 0.2 # Rough heuristic
+            # 2. Get Forecast Demand 
+            med_demand = {}
+            if os.path.exists(FORECAST_PATH):
+                df_forecast = pd.read_csv(FORECAST_PATH)
+                if 'med_name' in df_forecast.columns:
+                     demand_series = df_forecast.groupby('med_name')['predicted_sales'].mean()
+                     med_demand = demand_series.to_dict()
+                else:
+                     global_avg = df_forecast['predicted_sales'].mean()
+                     for m in inventory_map.keys():
+                         med_demand[m] = global_avg * 0.2
         
-        # 3. Calculate Logic
-        # Policy: Target = 10 Days of Sales
-        all_meds = set(inventory_map.keys()).union(set(med_demand.keys()))
-        
-        for med in all_meds:
-            daily_sales = med_demand.get(med, 5) # Default 5 units/day if no forecast
-            current_stock = inventory_map.get(med, 0)
+            # 3. Calculate Logic
+            all_meds = set(inventory_map.keys()).union(set(med_demand.keys()))
             
-            target_days = 10
-            target_stock = daily_sales * target_days
-            
-            if current_stock < target_stock:
-                status = "Reorder Needed"
-                reorder_qty = int(target_stock - current_stock)
-            else:
-                status = "OK"
-                reorder_qty = 0
+            for med in all_meds:
+                daily_sales = med_demand.get(med, 5) # Default 5 units/day
+                current_stock = inventory_map.get(med, 0)
                 
-            recommendations.append({
-                "med_name": med,
-                "current_stock": int(current_stock),
-                "avg_daily_demand": round(daily_sales, 1),
-                "target_stock": int(target_stock),
-                "status": status,
-                "reorder_qty": reorder_qty
-            })
+                # OUTBREAK LOGIC 1: Demand Multiplier
+                is_outbreak_drug = med in outbreak_meds
+                multiplier = 1.0
+                reason_tag = None
+                
+                if is_outbreak_drug:
+                    multiplier = 1.5 # Boost demand by 50%
+                    reason_tag = "Demand Boosted by Outbreak Intel"
+                    daily_sales *= multiplier
+                
+                target_days = 10
+                target_stock = daily_sales * target_days
+                
+                if current_stock < target_stock:
+                    status = "Reorder Needed"
+                    reorder_qty = int(target_stock - current_stock)
+                else:
+                    status = "OK"
+                    reorder_qty = 0
+                    
+                recommendations.append({
+                    "med_name": med,
+                    "current_stock": int(current_stock),
+                    "avg_daily_demand": round(daily_sales, 1),
+                    "target_stock": int(target_stock),
+                    "status": status,
+                    "reorder_qty": reorder_qty,
+                    "outbreak_tag": reason_tag # New Field
+                })
             
         return sorted(recommendations, key=lambda x: x['reorder_qty'], reverse=True)
 
     except Exception as e:
         print(f"Error in /reorder: {e}")
-        # Fallback to CSV if exists
-        if os.path.exists(REORDER_PATH):
-            df = pd.read_csv(REORDER_PATH)
-            return df.to_dict(orient='records')
-        raise HTTPException(status_code=500, detail=str(e))
-    except Exception as e:
-        # Fallback
         if os.path.exists(REORDER_PATH):
             df = pd.read_csv(REORDER_PATH)
             return df.to_dict(orient='records')
@@ -331,6 +380,20 @@ def get_revenue_recovery(med_name: str, current_price: float, days_left: int):
     Dynamic Pricing Engine: Suggests discounts for near-expiry items.
     """
     try:
+        # OUTBREAK LOGIC 3: Suppress Clearance for Critical Outbreak Drugs
+        with engine.connect() as conn:
+             outbreak_meds, _ = get_active_outbreaks(conn)
+             
+        if med_name in outbreak_meds:
+            # Return strategy to HOLD STOCK
+            return [{
+                "discount_pct": 0,
+                "price": current_price,
+                "est_qty": 0,
+                "est_revenue": 0,
+                "note": "OUTBREAK ALERT: Do not discount. Stock required for active health emergency."
+            }]
+
         # Load Model (In real app, load once at startup)
         # We rely on 'pricing_model.py' being in the same directory
         from pricing_model import train_pricing_model, recommend_discount

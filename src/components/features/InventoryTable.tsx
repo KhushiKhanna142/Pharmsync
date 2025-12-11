@@ -22,13 +22,13 @@ interface InventoryItem {
   manufacturer?: string;
   unitPrice?: number;
   category?: string;
+  isOutbreak?: boolean;
 }
 
 interface InventoryTableProps {
   data: Record<string, string>[];
   mapping: Record<string, string>;
 }
-
 const parseDate = (dateStr: string): Date => {
   // Try multiple date formats
   const formats = [
@@ -56,7 +56,6 @@ export function InventoryTable({ data, mapping }: InventoryTableProps) {
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState<"expiry" | "name" | "quantity">("expiry");
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
-
   const processedData: InventoryItem[] = useMemo(() => {
     return data.map((row, index) => ({
       id: String(index),
@@ -67,6 +66,7 @@ export function InventoryTable({ data, mapping }: InventoryTableProps) {
       manufacturer: mapping.manufacturer ? row[mapping.manufacturer] : undefined,
       unitPrice: mapping.unitPrice ? parseFloat(row[mapping.unitPrice]) : undefined,
       category: mapping.category ? row[mapping.category] : undefined,
+      isOutbreak: mapping.isOutbreak ? row[mapping.isOutbreak] === "true" : false,
     }));
   }, [data, mapping]);
 
@@ -213,7 +213,14 @@ export function InventoryTable({ data, mapping }: InventoryTableProps) {
 
               return (
                 <TableRow key={item.id}>
-                  <TableCell className="font-medium">{item.drugName}</TableCell>
+                  <TableCell className="font-medium">
+                    {item.drugName}
+                    {item.isOutbreak && (
+                      <Badge variant="destructive" className="ml-2 text-[10px] animate-pulse">
+                        OUTBREAK IMPACT
+                      </Badge>
+                    )}
+                  </TableCell>
                   <TableCell>
                     <div className="flex items-center gap-2">
                       <span>{item.quantity}</span>

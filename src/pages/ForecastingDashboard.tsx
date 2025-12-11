@@ -93,22 +93,26 @@ export default function ForecastingDashboard() {
                     fetch("http://localhost:8000/waste/analytics")
                 ]);
 
-                if (!forecastRes.ok) throw new Error("Failed to fetch data");
+                if (!forecastRes.ok) throw new Error("Failed to fetch forecast data");
+                if (!wasteRes.ok) throw new Error("Failed to fetch waste analytics");
 
                 const forecastData = await forecastRes.json();
                 const wasteData = await wasteRes.json();
 
                 if (forecastData.length > 0) {
-                    const keys = Object.keys(forecastData[0]).filter(k => k !== 'date');
+                    const keys = Object.keys(forecastData[0]).filter(k => k !== 'date' && k !== 'predicted_sales' && k !== 'is_holiday');
                     setDrugKeys(keys);
                     if (keys.length > 0) setSelectedDrug(keys[0]);
                 }
 
                 // Format overview
-                const formattedForecast = forecastData.map((item: any) => ({
-                    ...item,
-                    displayDate: new Date(item.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })
-                }));
+                const formattedForecast = forecastData.map((item: any) => {
+                    const d = new Date(item.date);
+                    return {
+                        ...item,
+                        displayDate: isNaN(d.getTime()) ? item.date : d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' })
+                    };
+                });
 
                 setForecast(formattedForecast);
                 setWasteAnalytics(wasteData);

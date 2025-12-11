@@ -12,6 +12,8 @@ import Settings from "./pages/Settings";
 import ForecastingDashboard from "./pages/ForecastingDashboard";
 import NotFound from "./pages/NotFound";
 
+import OutbreakIntel from "./pages/OutbreakIntel";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -34,6 +36,22 @@ const App = () => (
             element={
               <MainLayout>
                 <Inventory />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/forecasting"
+            element={
+              <MainLayout>
+                <ForecastingDashboard />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/outbreak"
+            element={
+              <MainLayout>
+                <OutbreakIntel />
               </MainLayout>
             }
           />
