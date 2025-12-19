@@ -1,73 +1,110 @@
-# Welcome to your Lovable project
+# Zenith Pharmacy Hub 🏥💊
 
-## Project info
+**Zenith Pharmacy Hub** is an advanced, AI-powered pharmacy management system designed to optimize inventory, reduce waste, forecast demand, and streamline billing operations. It integrates real-time analytics with smart forecasting to ensure critical medicines are always in stock while minimizing expiration losses.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+![Zenith Dashboard](https://via.placeholder.com/1200x600?text=Zenith+Pharmacy+Hub+Dashboard)
 
-## How can I edit this code?
+## 🚀 Key Features
 
-There are several ways of editing your application.
+### 1. **Smart Dashboard**
+- **Real-time Metrics**: Track Total Products, Low Stock Alerts, and Expiring Items.
+- **Outbreak Intelligence**: Live alerts on local disease outbreaks (e.g., Flu in Mumbai) to prep inventory.
+- **Visual Analytics**: Interactive charts for demand trends and inventory health.
 
-**Use Lovable**
+### 2. **AI-Powered Demand Forecasting** 📈
+- **Predictive Models**: 6-month demand forecasts using historical data and seasonal trends.
+- **"Why?" Logic**: Explainable AI that tells you *why* demand is rising (e.g., "Winter season - higher respiratory infections").
+- **Smart Reordering**: Automated reorder schedules (High/Medium/Low priority) based on real-time stock vs. safety stock levels.
+- **Seasonal Analysis**: Visual impact of seasons (Winter vs. Summer demand multipliers).
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### 3. **Inventory & Expiry Management** ⏳
+- **Batch Tracking**: Manage inventory by batch ID and expiry dates.
+- **Waste Analysis**: Comprehensive reports on expired stock, financial loss, and primary waste contributors.
+- **Automated Sweeps**: Background scripts automatically move expired items to waste logs.
+- **Stock Entry**: Seamlessly add new stock via the Billing interface.
 
-Changes made via Lovable will be committed automatically to this repo.
+### 4. **Billing & POS System** 💳
+- **Fast Checkout**: User-friendly Point of Sale interface for rapid customer billing.
+- **Inventory Sync**: Automatic deduction of sold items from inventory.
+- **Receipt Generation**: (Planned) Digital receipt and print support.
 
-**Use your preferred IDE**
+### 5. **Outbreak Intelligence** 🦠
+- **Early Warning System**: Monitors external data triggers to warn about potential local health outbreaks.
+- **Stock Correlation**: Suggests stock increases for relevant medicines (e.g., Paracetamol during a fever outbreak).
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Tech Stack
 
-Follow these steps:
+- **Frontend**: React (Vite), Tailwind CSS, Shadcn UI, Recharts, Lucide Icons.
+- **Backend**: Python (FastAPI), SQLAlchemy, Pydantic.
+- **Database**: PostgreSQL (Supabase).
+- **AI/ML**: Custom Python logic for seasonality and trend forecasting.
+- **Data Pipeline**: Python scripts for daily expiry sweeps and waste consolidation.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📂 Project Structure
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+zenith-pharmacy-hub/
+├── src/                    # React Frontend
+│   ├── pages/              # Dashboard, Forecasting, Billing, WasteAnalysis
+│   ├── components/         # Reusable UI components
+│   └── lib/                # Utilities
+├── Demand forecasting/     # Python Backend & ML
+│   ├── src/
+│   │   ├── api.py          # FastAPI Server (Port 8000)
+│   │   ├── db_direct.py    # Database Connection
+│   │   └── seed_*.py       # Data Seeding Scripts
+│   └── data/               # Datasets
+├── outbreak/               # Outbreak Intelligence Module
+└── public/                 # Static Assets
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## ⚡ Getting Started
 
-**Use GitHub Codespaces**
+### Prerequisites
+- Node.js & npm
+- Python 3.9+
+- PostgreSQL Database (Supabase recommended)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### 1. Backend Setup
+```bash
+cd "Demand forecasting/src"
+pip install -r requirements.txt
+# Set up your .env file with DB_CONNECTION_STRING
+python api.py
+```
+*Server runs on `http://localhost:8000`*
 
-## What technologies are used for this project?
+### 2. Frontend Setup
+```bash
+# In the root directory
+npm install
+npm run dev
+```
+*Client runs on `http://localhost:5173`*
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🧪 Key Scripts
 
-## How can I deploy this project?
+- **`daily_sweep.py`**: Runs daily to move expired inventory to waste logs.
+- **`seed_dolo_para.py`**: Seeds demo data for specific medicines.
+- **`api.py`**: Main backend API handling forecasting and billing logic.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 🤝 Contributing
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+© 2025 Zenith Pharmacy Hub. All Rights Reserved.
