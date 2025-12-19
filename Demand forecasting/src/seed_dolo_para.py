@@ -7,7 +7,7 @@ def seed_missing_meds():
     # Drug Catalog Data (Brand Name, Generic, Manuf, Amount, Strength, Form, Ingredient)
     new_drugs = [
         {
-            "brand": "Dolo 650 Tablet",
+            "brand": "Dolo 650",
             "generic": "Paracetamol",
             "manuf": "Micro Labs Ltd",
             "dosage": "650mg",
@@ -26,11 +26,7 @@ def seed_missing_meds():
 
     meds_to_add = [
         # Name, Expiry Days Offset, Qty, Cost
-        ("Dolo 650 Tablet", 30, 150, 2.50),   # Critical
-        ("Dolo 650 Tablet", 120, 200, 2.50),  # Warning
-        ("Dolo 650 Tablet", 365, 500, 2.50),  # Good
-        ("Paracetamol 500mg", 45, 100, 1.20), # Critical
-        ("Paracetamol 500mg", 200, 300, 1.20),# Good
+        ("Dolo 650", 120, 500, 2.50),  # Matches user request exactly
     ]
 
     with engine.connect() as conn:

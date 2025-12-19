@@ -8,7 +8,8 @@ import {
     Download,
     Filter,
     ChevronsRight,
-    Activity
+    Activity,
+    Printer
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -49,6 +50,7 @@ export default function WasteAnalysis() {
     const [data, setData] = useState<WasteMetrics | null>(null);
     const [loading, setLoading] = useState(true);
     const [selectedReason, setSelectedReason] = useState<string>("All");
+    const [showReport, setShowReport] = useState(false);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -78,9 +80,7 @@ export default function WasteAnalysis() {
     }) || [];
 
     const handleDownload = () => {
-        toast.success("Waste Report Generated", {
-            description: "The PDF report has been downloaded successfully."
-        });
+        setShowReport(true);
     };
 
     if (loading) {
@@ -236,7 +236,7 @@ export default function WasteAnalysis() {
                                         <DialogTitle>Overstock Alerts</DialogTitle>
                                     </DialogHeader>
                                     <div className="space-y-4 pt-4">
-                                        <p className="text-sm text-muted-foreground">Items with excess inventory ({'>'}500 units).</p>
+                                        <p className="text-sm text-muted-foreground">Items with excess inventory ({'>'}300 units).</p>
                                         <div className="grid gap-2">
                                             {(!data.overstock_items || data.overstock_items.length === 0) ? (
                                                 <p className="text-muted-foreground text-sm">No items found.</p>
@@ -258,9 +258,6 @@ export default function WasteAnalysis() {
 
                             <Button variant="secondary" className="justify-start bg-blue-50 text-blue-700 hover:bg-blue-100" onClick={handleDownload}>
                                 Generate Waste Report
-                            </Button>
-                            <Button variant="secondary" className="justify-start bg-green-50 text-green-700 hover:bg-green-100 opacity-50 cursor-not-allowed">
-                                Optimization Suggestions
                             </Button>
                         </CardContent>
                     </Card>
@@ -340,6 +337,85 @@ export default function WasteAnalysis() {
                     </Table>
                 </CardContent>
             </Card>
+            {/* Report Dialog */}
+            <Dialog open={showReport} onOpenChange={setShowReport}>
+                <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
+                    <DialogHeader>
+                        <DialogTitle>Waste Analysis Report</DialogTitle>
+                        <CardDescription>Generated on {new Date().toLocaleDateString()}</CardDescription>
+                    </DialogHeader>
+
+                    <div className="space-y-6 pt-4" id="printable-report">
+                        {/* Summary Header */}
+                        <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                            <h3 className="font-bold text-lg mb-4 text-slate-800">Executive Summary</h3>
+                            <div className="grid grid-cols-2 gap-4">
+                                <div>
+                                    <span className="text-muted-foreground text-sm">Total Value Lost:</span>
+                                    <div className="text-2xl font-bold text-rose-600">₹{data.kpi.total_waste_value.toLocaleString()}</div>
+                                </div>
+                                <div>
+                                    <span className="text-muted-foreground text-sm">Waste Ratio:</span>
+                                    <div className="text-2xl font-bold text-blue-600">{data.kpi.waste_percentage}%</div>
+                                </div>
+                                <div className="col-span-2 border-t pt-2 mt-2">
+                                    <span className="text-muted-foreground text-sm">Primary Contributor:</span>
+                                    <div className="font-semibold">{data.categories?.[0]?.name || "N/A"} ({data.categories?.[0]?.percentage?.toFixed(1) || 0}%)</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Breakdown */}
+                        <div>
+                            <h4 className="font-semibold mb-2">Category Breakdown</h4>
+                            <div className="space-y-2">
+                                {data.categories.map((cat, i) => (
+                                    <div key={i} className="flex justify-between items-center text-sm border-b pb-1 last:border-0">
+                                        <span>{cat.name}</span>
+                                        <span className="font-mono">₹{cat.value.toLocaleString()} ({cat.percentage.toFixed(1)}%)</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Top Offenders */}
+                        <div>
+                            <h4 className="font-semibold mb-2">High Value Loss Items</h4>
+                            <Table>
+                                <TableHeader>
+                                    <TableRow className="bg-slate-50">
+                                        <TableHead className="h-8">Item</TableHead>
+                                        <TableHead className="h-8 text-right">Value</TableHead>
+                                        <TableHead className="h-8">Reason</TableHead>
+                                    </TableRow>
+                                </TableHeader>
+                                <TableBody>
+                                    {data.top_wasted.slice(0, 5).map((item, i) => (
+                                        <TableRow key={i} className="h-10">
+                                            <TableCell className="font-medium py-2">{item.medication}</TableCell>
+                                            <TableCell className="text-right py-2">₹{item.value.toLocaleString()}</TableCell>
+                                            <TableCell className="py-2 text-xs text-muted-foreground">{item.primary_reason}</TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </div>
+
+                        {/* Recommendation */}
+                        <div className="bg-blue-50 p-4 rounded-lg text-sm text-blue-800 border-blue-100">
+                            <strong>AI Recommendation:</strong> High expiration rate detected in {data.categories?.[0]?.name || "Antibiotics"}.
+                            Recommend adjusting safety stock for low-turnover items.
+                        </div>
+                    </div>
+
+                    <div className="flex justify-end gap-2 pt-4 border-t">
+                        <Button variant="outline" onClick={() => setShowReport(false)}>Close</Button>
+                        <Button onClick={() => window.print()} className="gap-2">
+                            <Printer className="h-4 w-4" /> Print / Save PDF
+                        </Button>
+                    </div>
+                </DialogContent>
+            </Dialog>
         </div>
     );
 }

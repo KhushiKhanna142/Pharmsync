@@ -96,9 +96,9 @@ export default function Dashboard() {
       </div>
 
       {/* Charts Section */}
-      <div className="grid gap-6 lg:grid-cols-2">
+      <div className="grid gap-6 lg:grid-cols-1">
         <DemandChart />
-        <ReorderAlerts />
+        {/* <ReorderAlerts /> moved to Forecasting Page */}
       </div>
     </div>
   );
