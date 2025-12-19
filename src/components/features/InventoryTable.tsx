@@ -28,6 +28,8 @@ interface InventoryItem {
 interface InventoryTableProps {
   data: Record<string, string>[];
   mapping: Record<string, string>;
+  searchTerm: string;
+  onSearch: (value: string) => void;
 }
 const parseDate = (dateStr: string): Date => {
   // Try multiple date formats
@@ -52,8 +54,7 @@ const parseDate = (dateStr: string): Date => {
   return new Date();
 };
 
-export function InventoryTable({ data, mapping }: InventoryTableProps) {
-  const [search, setSearch] = useState("");
+export function InventoryTable({ data, mapping, searchTerm, onSearch }: InventoryTableProps) {
   const [sortBy, setSortBy] = useState<"expiry" | "name" | "quantity">("expiry");
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
   const processedData: InventoryItem[] = useMemo(() => {
@@ -71,12 +72,7 @@ export function InventoryTable({ data, mapping }: InventoryTableProps) {
   }, [data, mapping]);
 
   const filteredAndSortedData = useMemo(() => {
-    let result = processedData.filter(
-      (item) =>
-        item.drugName.toLowerCase().includes(search.toLowerCase()) ||
-        item.batchNumber?.toLowerCase().includes(search.toLowerCase()) ||
-        item.category?.toLowerCase().includes(search.toLowerCase())
-    );
+    let result = [...processedData];
 
     result.sort((a, b) => {
       let comparison = 0;
@@ -96,7 +92,7 @@ export function InventoryTable({ data, mapping }: InventoryTableProps) {
     });
 
     return result;
-  }, [processedData, search, sortBy, sortOrder]);
+  }, [processedData, sortBy, sortOrder]);
 
 
   const getExpiryStatus = (dateStr: string) => {
@@ -136,9 +132,9 @@ export function InventoryTable({ data, mapping }: InventoryTableProps) {
     }
   };
 
-  if (processedData.length === 0) {
-    return null;
-  }
+  // if (processedData.length === 0) {
+  //   return null;
+  // }
 
   return (
     <div className="rounded-xl border border-border bg-card shadow-card animate-slide-up">
@@ -156,8 +152,8 @@ export function InventoryTable({ data, mapping }: InventoryTableProps) {
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
               placeholder="Search drugs..."
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
+              value={searchTerm}
+              onChange={(e) => onSearch(e.target.value)}
               className="pl-9"
             />
           </div>

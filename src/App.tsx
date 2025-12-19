@@ -13,6 +13,9 @@ import ForecastingDashboard from "./pages/ForecastingDashboard";
 import NotFound from "./pages/NotFound";
 
 import OutbreakIntel from "./pages/OutbreakIntel";
+import ExpiryManagement from "./pages/ExpiryManagement";
+import WasteAnalysis from "./pages/WasteAnalysis";
+import Billing from "./pages/Billing";
 
 const queryClient = new QueryClient();
 
@@ -84,6 +87,30 @@ const App = () => (
             element={
               <MainLayout>
                 <ForecastingDashboard />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/expiry"
+            element={
+              <MainLayout>
+                <ExpiryManagement />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/waste"
+            element={
+              <MainLayout>
+                <WasteAnalysis />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/billing"
+            element={
+              <MainLayout>
+                <Billing />
               </MainLayout>
             }
           />

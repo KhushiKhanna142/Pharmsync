@@ -11,6 +11,9 @@ import {
   X,
   LineChart,
   Activity,
+  AlertTriangle,
+  Trash2,
+  Receipt,
 } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -18,7 +21,6 @@ import { Button } from "@/components/ui/button";
 const navItems = [
   { title: "Dashboard", href: "/", icon: LayoutDashboard },
   { title: "Inventory", href: "/inventory", icon: Package },
-  { title: "Incoming Scripts", href: "/scripts", icon: FileText },
   {
     title: "Forecasting",
     href: "/forecasting", // Changed 'url' to 'href'
@@ -30,8 +32,19 @@ const navItems = [
     icon: Activity,
   },
   {
+    title: "Expiry Management",
+    href: "/expiry",
+    icon: AlertTriangle, // Using AlertTriangle for Expiry
+  },
+  {
+    title: "Waste Analysis",
+    href: "/waste",
+    icon: Trash2, // Using Trash2 for Waste
+  },
+  {
     title: "Analytics", href: "/analytics", icon: BarChart3
   },
+  { title: "Billing", href: "/billing", icon: Receipt },
   { title: "Settings", href: "/settings", icon: Settings },
 ];
 

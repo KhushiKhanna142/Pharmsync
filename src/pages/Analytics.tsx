@@ -10,15 +10,15 @@ import {
   Pie,
   Cell,
 } from "recharts";
-import { TrendingUp, TrendingDown, DollarSign, Package } from "lucide-react";
+import { TrendingUp, TrendingDown, IndianRupee, Package } from "lucide-react";
 
 const salesData = [
-  { month: "Jan", sales: 45000 },
-  { month: "Feb", sales: 52000 },
-  { month: "Mar", sales: 48000 },
-  { month: "Apr", sales: 61000 },
-  { month: "May", sales: 55000 },
-  { month: "Jun", sales: 67000 },
+  { month: "Jul", sales: 1250000 },
+  { month: "Aug", sales: 1400000 },
+  { month: "Sep", sales: 1150000 },
+  { month: "Oct", sales: 1550000 },
+  { month: "Nov", sales: 1720000 },
+  { month: "Dec", sales: 1850000 },
 ];
 
 const categoryData = [
@@ -54,10 +54,10 @@ export default function Analytics() {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-muted-foreground">Total Revenue</p>
-              <p className="mt-1 text-2xl font-bold text-foreground">$328,400</p>
+              <p className="mt-1 text-2xl font-bold text-foreground">₹85,40,000</p>
             </div>
             <div className="rounded-lg bg-success/10 p-3">
-              <DollarSign className="h-5 w-5 text-success" />
+              <IndianRupee className="h-5 w-5 text-success" />
             </div>
           </div>
           <div className="mt-4 flex items-center gap-1 text-sm">
@@ -88,15 +88,15 @@ export default function Analytics() {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-muted-foreground">Avg Order Value</p>
-              <p className="mt-1 text-2xl font-bold text-foreground">$25.54</p>
+              <p className="mt-1 text-2xl font-bold text-foreground">₹650</p>
             </div>
             <div className="rounded-lg bg-accent/10 p-3">
               <TrendingUp className="h-5 w-5 text-accent" />
             </div>
           </div>
           <div className="mt-4 flex items-center gap-1 text-sm">
-            <TrendingDown className="h-4 w-4 text-destructive" />
-            <span className="text-destructive">-2.1%</span>
+            <TrendingUp className="h-4 w-4 text-success" />
+            <span className="text-success">+2%</span>
             <span className="text-muted-foreground">vs last month</span>
           </div>
         </div>
@@ -138,7 +138,7 @@ export default function Analytics() {
                 <YAxis
                   stroke="hsl(var(--muted-foreground))"
                   fontSize={12}
-                  tickFormatter={(v) => `$${v / 1000}k`}
+                  tickFormatter={(v) => `₹${(v / 100000).toFixed(1)}L`}
                 />
                 <Tooltip
                   contentStyle={{
@@ -146,7 +146,7 @@ export default function Analytics() {
                     border: "1px solid hsl(var(--border))",
                     borderRadius: "8px",
                   }}
-                  formatter={(value: number) => [`$${value.toLocaleString()}`, "Sales"]}
+                  formatter={(value: number) => [`₹${value.toLocaleString()}`, "Sales"]}
                 />
                 <Bar dataKey="sales" fill="hsl(var(--chart-1))" radius={[4, 4, 0, 0]} />
               </BarChart>

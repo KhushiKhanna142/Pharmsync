@@ -1,0 +1,1 @@
+// ReceiptGenerator component

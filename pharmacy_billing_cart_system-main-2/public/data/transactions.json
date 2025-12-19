@@ -1,0 +1,4368 @@
+{
+  "transactions": [
+    {
+      "id": "TXN_000001",
+      "bill_number": "PHM202512120001",
+      "customer_name": "Kavita Nair",
+      "customer_phone": "9859428219",
+      "items": [
+        {
+          "name": "Product 87",
+          "quantity": 2,
+          "price": 308.13,
+          "total": 616.26
+        },
+        {
+          "name": "Product 335",
+          "quantity": 1,
+          "price": 387.22,
+          "total": 387.22
+        },
+        {
+          "name": "Product 613",
+          "quantity": 1,
+          "price": 461.92,
+          "total": 461.92
+        }
+      ],
+      "subtotal": 1465.4,
+      "discount": 34.35,
+      "gst_amount": 171.73,
+      "total_amount": 1602.78,
+      "payment_method": "CASH",
+      "date": "2025-11-12T01:38:02.729629"
+    },
+    {
+      "id": "TXN_000002",
+      "bill_number": "PHM202512120002",
+      "customer_name": "Rohan Joshi",
+      "customer_phone": "9879807673",
+      "items": [
+        {
+          "name": "Product 473",
+          "quantity": 1,
+          "price": 207.55,
+          "total": 207.55
+        },
+        {
+          "name": "Product 640",
+          "quantity": 3,
+          "price": 468.6,
+          "total": 1405.8000000000002
+        },
+        {
+          "name": "Product 476",
+          "quantity": 3,
+          "price": 30.3,
+          "total": 90.9
+        },
+        {
+          "name": "Product 92",
+          "quantity": 1,
+          "price": 435.49,
+          "total": 435.49
+        },
+        {
+          "name": "Product 358",
+          "quantity": 1,
+          "price": 473.48,
+          "total": 473.48
+        }
+      ],
+      "subtotal": 2613.2200000000003,
+      "discount": 47.52,
+      "gst_amount": 307.88,
+      "total_amount": 2873.58,
+      "payment_method": "CASH",
+      "date": "2025-12-06T01:38:02.729682"
+    },
+    {
+      "id": "TXN_000003",
+      "bill_number": "PHM202512120003",
+      "customer_name": "Rajesh Kumar",
+      "customer_phone": "9896638469",
+      "items": [
+        {
+          "name": "Product 471",
+          "quantity": 1,
+          "price": 42.35,
+          "total": 42.35
+        },
+        {
+          "name": "Product 438",
+          "quantity": 2,
+          "price": 370.64,
+          "total": 741.28
+        },
+        {
+          "name": "Product 655",
+          "quantity": 2,
+          "price": 170.79,
+          "total": 341.58
+        }
+      ],
+      "subtotal": 1125.21,
+      "discount": 106.3,
+      "gst_amount": 122.27,
+      "total_amount": 1141.18,
+      "payment_method": "UPI",
+      "date": "2025-12-02T01:38:02.729706"
+    },
+    {
+      "id": "TXN_000004",
+      "bill_number": "PHM202512120004",
+      "customer_name": "Anjali Verma",
+      "customer_phone": "9873562991",
+      "items": [
+        {
+          "name": "Product 625",
+          "quantity": 3,
+          "price": 157.76,
+          "total": 473.28
+        },
+        {
+          "name": "Product 809",
+          "quantity": 1,
+          "price": 297.85,
+          "total": 297.85
+        },
+        {
+          "name": "Product 456",
+          "quantity": 3,
+          "price": 390.31,
+          "total": 1170.93
+        },
+        {
+          "name": "Product 653",
+          "quantity": 2,
+          "price": 61.77,
+          "total": 123.54
+        },
+        {
+          "name": "Product 194",
+          "quantity": 2,
+          "price": 474.09,
+          "total": 948.18
+        },
+        {
+          "name": "Product 717",
+          "quantity": 3,
+          "price": 15.55,
+          "total": 46.650000000000006
+        }
+      ],
+      "subtotal": 3060.43,
+      "discount": 125.44,
+      "gst_amount": 352.2,
+      "total_amount": 3287.19,
+      "payment_method": "CASH",
+      "date": "2025-12-01T01:38:02.729732"
+    },
+    {
+      "id": "TXN_000005",
+      "bill_number": "PHM202512120005",
+      "customer_name": "Sneha Sharma",
+      "customer_phone": "9888276090",
+      "items": [
+        {
+          "name": "Product 373",
+          "quantity": 1,
+          "price": 302.16,
+          "total": 302.16
+        },
+        {
+          "name": "Product 934",
+          "quantity": 2,
+          "price": 222.25,
+          "total": 444.5
+        },
+        {
+          "name": "Product 551",
+          "quantity": 3,
+          "price": 387.9,
+          "total": 1163.6999999999998
+        },
+        {
+          "name": "Product 547",
+          "quantity": 3,
+          "price": 151.39,
+          "total": 454.16999999999996
+        },
+        {
+          "name": "Product 396",
+          "quantity": 2,
+          "price": 155.35,
+          "total": 310.7
+        },
+        {
+          "name": "Product 868",
+          "quantity": 1,
+          "price": 492.24,
+          "total": 492.24
+        },
+        {
+          "name": "Product 372",
+          "quantity": 3,
+          "price": 314.97,
+          "total": 944.9100000000001
+        },
+        {
+          "name": "Product 90",
+          "quantity": 2,
+          "price": 106.27,
+          "total": 212.54
+        }
+      ],
+      "subtotal": 4324.919999999999,
+      "discount": 149.15,
+      "gst_amount": 501.09,
+      "total_amount": 4676.86,
+      "payment_method": "CASH",
+      "date": "2025-11-17T01:38:02.729760"
+    },
+    {
+      "id": "TXN_000006",
+      "bill_number": "PHM202512120006",
+      "customer_name": "Rohan Joshi",
+      "customer_phone": "9889253005",
+      "items": [
+        {
+          "name": "Product 4",
+          "quantity": 1,
+          "price": 200.0,
+          "total": 200.0
+        },
+        {
+          "name": "Product 492",
+          "quantity": 3,
+          "price": 107.12,
+          "total": 321.36
+        },
+        {
+          "name": "Product 381",
+          "quantity": 2,
+          "price": 223.02,
+          "total": 446.04
+        },
+        {
+          "name": "Product 247",
+          "quantity": 3,
+          "price": 185.99,
+          "total": 557.97
+        },
+        {
+          "name": "Product 811",
+          "quantity": 1,
+          "price": 352.8,
+          "total": 352.8
+        },
+        {
+          "name": "Product 842",
+          "quantity": 3,
+          "price": 344.62,
+          "total": 1033.8600000000001
+        },
+        {
+          "name": "Product 643",
+          "quantity": 2,
+          "price": 138.66,
+          "total": 277.32
+        }
+      ],
+      "subtotal": 3189.3500000000004,
+      "discount": 303.9,
+      "gst_amount": 346.25,
+      "total_amount": 3231.7,
+      "payment_method": "CASH",
+      "date": "2025-11-18T01:38:02.729784"
+    },
+    {
+      "id": "TXN_000007",
+      "bill_number": "PHM202512120007",
+      "customer_name": "Suresh Gupta",
+      "customer_phone": "9863979624",
+      "items": [
+        {
+          "name": "Product 838",
+          "quantity": 1,
+          "price": 174.64,
+          "total": 174.64
+        },
+        {
+          "name": "Product 114",
+          "quantity": 2,
+          "price": 168.21,
+          "total": 336.42
+        }
+      ],
+      "subtotal": 511.06,
+      "discount": 3.73,
+      "gst_amount": 60.88,
+      "total_amount": 568.21,
+      "payment_method": "CASH",
+      "date": "2025-11-20T01:38:02.729800"
+    },
+    {
+      "id": "TXN_000008",
+      "bill_number": "PHM202512120008",
+      "customer_name": "Suresh Gupta",
+      "customer_phone": "9894113270",
+      "items": [
+        {
+          "name": "Product 183",
+          "quantity": 1,
+          "price": 274.85,
+          "total": 274.85
+        },
+        {
+          "name": "Product 91",
+          "quantity": 1,
+          "price": 80.27,
+          "total": 80.27
+        },
+        {
+          "name": "Product 549",
+          "quantity": 1,
+          "price": 466.91,
+          "total": 466.91
+        },
+        {
+          "name": "Product 53",
+          "quantity": 3,
+          "price": 135.74,
+          "total": 407.22
+        },
+        {
+          "name": "Product 284",
+          "quantity": 2,
+          "price": 322.61,
+          "total": 645.22
+        },
+        {
+          "name": "Product 403",
+          "quantity": 3,
+          "price": 429.37,
+          "total": 1288.1100000000001
+        }
+      ],
+      "subtotal": 3162.58,
+      "discount": 75.17,
+      "gst_amount": 370.49,
+      "total_amount": 3457.9,
+      "payment_method": "CASH",
+      "date": "2025-12-04T01:38:02.729820"
+    },
+    {
+      "id": "TXN_000009",
+      "bill_number": "PHM202512120009",
+      "customer_name": "Sneha Sharma",
+      "customer_phone": "9822175309",
+      "items": [
+        {
+          "name": "Product 767",
+          "quantity": 1,
+          "price": 87.83,
+          "total": 87.83
+        },
+        {
+          "name": "Product 837",
+          "quantity": 2,
+          "price": 376.93,
+          "total": 753.86
+        },
+        {
+          "name": "Product 225",
+          "quantity": 3,
+          "price": 428.43,
+          "total": 1285.29
+        },
+        {
+          "name": "Product 838",
+          "quantity": 3,
+          "price": 58.07,
+          "total": 174.21
+        },
+        {
+          "name": "Product 477",
+          "quantity": 1,
+          "price": 400.34,
+          "total": 400.34
+        },
+        {
+          "name": "Product 627",
+          "quantity": 2,
+          "price": 117.84,
+          "total": 235.68
+        },
+        {
+          "name": "Product 916",
+          "quantity": 1,
+          "price": 375.33,
+          "total": 375.33
+        }
+      ],
+      "subtotal": 3312.54,
+      "discount": 87.36,
+      "gst_amount": 387.02,
+      "total_amount": 3612.2,
+      "payment_method": "CASH",
+      "date": "2025-12-04T01:38:02.729841"
+    },
+    {
+      "id": "TXN_000010",
+      "bill_number": "PHM202512120010",
+      "customer_name": "Amit Patel",
+      "customer_phone": "9820789205",
+      "items": [
+        {
+          "name": "Product 768",
+          "quantity": 2,
+          "price": 486.8,
+          "total": 973.6
+        },
+        {
+          "name": "Product 840",
+          "quantity": 2,
+          "price": 425.72,
+          "total": 851.44
+        },
+        {
+          "name": "Product 589",
+          "quantity": 1,
+          "price": 287.38,
+          "total": 287.38
+        },
+        {
+          "name": "Product 740",
+          "quantity": 2,
+          "price": 478.73,
+          "total": 957.46
+        },
+        {
+          "name": "Product 739",
+          "quantity": 1,
+          "price": 35.47,
+          "total": 35.47
+        },
+        {
+          "name": "Product 304",
+          "quantity": 3,
+          "price": 18.11,
+          "total": 54.33
+        }
+      ],
+      "subtotal": 3159.68,
+      "discount": 72.81,
+      "gst_amount": 370.42,
+      "total_amount": 3457.29,
+      "payment_method": "CASH",
+      "date": "2025-11-28T01:38:02.729861"
+    },
+    {
+      "id": "TXN_000011",
+      "bill_number": "PHM202512120011",
+      "customer_name": "Kavita Nair",
+      "customer_phone": "9852535367",
+      "items": [
+        {
+          "name": "Product 452",
+          "quantity": 3,
+          "price": 211.67,
+          "total": 635.01
+        },
+        {
+          "name": "Product 483",
+          "quantity": 2,
+          "price": 151.17,
+          "total": 302.34
+        },
+        {
+          "name": "Product 1",
+          "quantity": 3,
+          "price": 86.67,
+          "total": 260.01
+        },
+        {
+          "name": "Product 947",
+          "quantity": 1,
+          "price": 305.11,
+          "total": 305.11
+        },
+        {
+          "name": "Product 452",
+          "quantity": 3,
+          "price": 351.88,
+          "total": 1055.6399999999999
+        },
+        {
+          "name": "Product 46",
+          "quantity": 1,
+          "price": 126.33,
+          "total": 126.33
+        }
+      ],
+      "subtotal": 2684.4399999999996,
+      "discount": 217.23,
+      "gst_amount": 296.07,
+      "total_amount": 2763.28,
+      "payment_method": "UPI",
+      "date": "2025-11-23T01:38:02.729879"
+    },
+    {
+      "id": "TXN_000012",
+      "bill_number": "PHM202512120012",
+      "customer_name": "Meera Desai",
+      "customer_phone": "9822802830",
+      "items": [
+        {
+          "name": "Product 75",
+          "quantity": 1,
+          "price": 483.98,
+          "total": 483.98
+        },
+        {
+          "name": "Product 862",
+          "quantity": 1,
+          "price": 121.51,
+          "total": 121.51
+        },
+        {
+          "name": "Product 258",
+          "quantity": 1,
+          "price": 20.38,
+          "total": 20.38
+        },
+        {
+          "name": "Product 135",
+          "quantity": 3,
+          "price": 52.81,
+          "total": 158.43
+        },
+        {
+          "name": "Product 751",
+          "quantity": 1,
+          "price": 258.0,
+          "total": 258.0
+        }
+      ],
+      "subtotal": 1042.3,
+      "discount": 22.75,
+      "gst_amount": 122.35,
+      "total_amount": 1141.9,
+      "payment_method": "UPI",
+      "date": "2025-12-05T01:38:02.729897"
+    },
+    {
+      "id": "TXN_000013",
+      "bill_number": "PHM202512120013",
+      "customer_name": "Priya Singh",
+      "customer_phone": "9835927448",
+      "items": [
+        {
+          "name": "Product 978",
+          "quantity": 1,
+          "price": 101.29,
+          "total": 101.29
+        },
+        {
+          "name": "Product 731",
+          "quantity": 3,
+          "price": 250.02,
+          "total": 750.0600000000001
+        },
+        {
+          "name": "Product 130",
+          "quantity": 2,
+          "price": 206.32,
+          "total": 412.64
+        },
+        {
+          "name": "Product 965",
+          "quantity": 3,
+          "price": 346.98,
+          "total": 1040.94
+        },
+        {
+          "name": "Product 283",
+          "quantity": 2,
+          "price": 94.06,
+          "total": 188.12
+        },
+        {
+          "name": "Product 400",
+          "quantity": 3,
+          "price": 257.82,
+          "total": 773.46
+        },
+        {
+          "name": "Product 833",
+          "quantity": 1,
+          "price": 283.96,
+          "total": 283.96
+        },
+        {
+          "name": "Product 90",
+          "quantity": 2,
+          "price": 456.05,
+          "total": 912.1
+        }
+      ],
+      "subtotal": 4462.570000000001,
+      "discount": 249.46,
+      "gst_amount": 505.57,
+      "total_amount": 4718.68,
+      "payment_method": "CASH",
+      "date": "2025-11-24T01:38:02.729917"
+    },
+    {
+      "id": "TXN_000014",
+      "bill_number": "PHM202512120014",
+      "customer_name": "Suresh Gupta",
+      "customer_phone": "9887991821",
+      "items": [
+        {
+          "name": "Product 304",
+          "quantity": 3,
+          "price": 98.16,
+          "total": 294.48
+        },
+        {
+          "name": "Product 296",
+          "quantity": 3,
+          "price": 322.49,
+          "total": 967.47
+        }
+      ],
+      "subtotal": 1261.95,
+      "discount": 34.3,
+      "gst_amount": 147.32,
+      "total_amount": 1374.97,
+      "payment_method": "CASH",
+      "date": "2025-11-12T01:38:02.729927"
+    },
+    {
+      "id": "TXN_000015",
+      "bill_number": "PHM202512120015",
+      "customer_name": "Rajesh Kumar",
+      "customer_phone": "9876258393",
+      "items": [
+        {
+          "name": "Product 915",
+          "quantity": 2,
+          "price": 330.32,
+          "total": 660.64
+        },
+        {
+          "name": "Product 781",
+          "quantity": 3,
+          "price": 338.37,
+          "total": 1015.11
+        },
+        {
+          "name": "Product 492",
+          "quantity": 3,
+          "price": 287.75,
+          "total": 863.25
+        },
+        {
+          "name": "Product 430",
+          "quantity": 3,
+          "price": 271.13,
+          "total": 813.39
+        },
+        {
+          "name": "Product 509",
+          "quantity": 1,
+          "price": 63.57,
+          "total": 63.57
+        },
+        {
+          "name": "Product 584",
+          "quantity": 1,
+          "price": 467.36,
+          "total": 467.36
+        }
+      ],
+      "subtotal": 3883.32,
+      "discount": 9.68,
+      "gst_amount": 464.84,
+      "total_amount": 4338.48,
+      "payment_method": "CASH",
+      "date": "2025-11-26T01:38:02.729944"
+    },
+    {
+      "id": "TXN_000016",
+      "bill_number": "PHM202512120016",
+      "customer_name": "Rohan Joshi",
+      "customer_phone": "9860916506",
+      "items": [
+        {
+          "name": "Product 895",
+          "quantity": 1,
+          "price": 140.39,
+          "total": 140.39
+        },
+        {
+          "name": "Product 860",
+          "quantity": 1,
+          "price": 80.1,
+          "total": 80.1
+        },
+        {
+          "name": "Product 949",
+          "quantity": 1,
+          "price": 226.24,
+          "total": 226.24
+        },
+        {
+          "name": "Product 790",
+          "quantity": 2,
+          "price": 18.62,
+          "total": 37.24
+        },
+        {
+          "name": "Product 897",
+          "quantity": 2,
+          "price": 292.18,
+          "total": 584.36
+        }
+      ],
+      "subtotal": 1068.33,
+      "discount": 91.22,
+      "gst_amount": 117.25,
+      "total_amount": 1094.36,
+      "payment_method": "UPI",
+      "date": "2025-11-16T01:38:02.729961"
+    },
+    {
+      "id": "TXN_000017",
+      "bill_number": "PHM202512120017",
+      "customer_name": "Meera Desai",
+      "customer_phone": "9868967585",
+      "items": [
+        {
+          "name": "Product 705",
+          "quantity": 1,
+          "price": 116.76,
+          "total": 116.76
+        },
+        {
+          "name": "Product 454",
+          "quantity": 2,
+          "price": 206.6,
+          "total": 413.2
+        },
+        {
+          "name": "Product 297",
+          "quantity": 2,
+          "price": 454.4,
+          "total": 908.8
+        },
+        {
+          "name": "Product 149",
+          "quantity": 3,
+          "price": 145.28,
+          "total": 435.84000000000003
+        },
+        {
+          "name": "Product 194",
+          "quantity": 3,
+          "price": 251.12,
+          "total": 753.36
+        },
+        {
+          "name": "Product 863",
+          "quantity": 3,
+          "price": 460.02,
+          "total": 1380.06
+        }
+      ],
+      "subtotal": 4008.02,
+      "discount": 298.99,
+      "gst_amount": 445.08,
+      "total_amount": 4154.11,
+      "payment_method": "CASH",
+      "date": "2025-12-03T01:38:02.729979"
+    },
+    {
+      "id": "TXN_000018",
+      "bill_number": "PHM202512120018",
+      "customer_name": "Priya Singh",
+      "customer_phone": "9848017099",
+      "items": [
+        {
+          "name": "Product 216",
+          "quantity": 3,
+          "price": 91.43,
+          "total": 274.29
+        },
+        {
+          "name": "Product 264",
+          "quantity": 3,
+          "price": 263.41,
+          "total": 790.23
+        },
+        {
+          "name": "Product 749",
+          "quantity": 2,
+          "price": 247.49,
+          "total": 494.98
+        },
+        {
+          "name": "Product 582",
+          "quantity": 3,
+          "price": 221.61,
+          "total": 664.83
+        },
+        {
+          "name": "Product 972",
+          "quantity": 2,
+          "price": 484.55,
+          "total": 969.1
+        },
+        {
+          "name": "Product 704",
+          "quantity": 3,
+          "price": 49.45,
+          "total": 148.35000000000002
+        },
+        {
+          "name": "Product 999",
+          "quantity": 3,
+          "price": 203.91,
+          "total": 611.73
+        }
+      ],
+      "subtotal": 3953.5099999999998,
+      "discount": 357.41,
+      "gst_amount": 431.53,
+      "total_amount": 4027.63,
+      "payment_method": "UPI",
+      "date": "2025-11-24T01:38:02.729997"
+    },
+    {
+      "id": "TXN_000019",
+      "bill_number": "PHM202512120019",
+      "customer_name": "Rajesh Kumar",
+      "customer_phone": "9887534114",
+      "items": [
+        {
+          "name": "Product 768",
+          "quantity": 3,
+          "price": 28.83,
+          "total": 86.49
+        },
+        {
+          "name": "Product 483",
+          "quantity": 3,
+          "price": 177.4,
+          "total": 532.2
+        }
+      ],
+      "subtotal": 618.69,
+      "discount": 29.25,
+      "gst_amount": 70.73,
+      "total_amount": 660.17,
+      "payment_method": "UPI",
+      "date": "2025-12-08T01:38:02.730007"
+    },
+    {
+      "id": "TXN_000020",
+      "bill_number": "PHM202512120020",
+      "customer_name": "Meera Desai",
+      "customer_phone": "9858489843",
+      "items": [
+        {
+          "name": "Product 994",
+          "quantity": 2,
+          "price": 161.88,
+          "total": 323.76
+        },
+        {
+          "name": "Product 271",
+          "quantity": 2,
+          "price": 454.75,
+          "total": 909.5
+        }
+      ],
+      "subtotal": 1233.26,
+      "discount": 105.56,
+      "gst_amount": 135.32,
+      "total_amount": 1263.02,
+      "payment_method": "UPI",
+      "date": "2025-12-03T01:38:02.730018"
+    },
+    {
+      "id": "TXN_000021",
+      "bill_number": "PHM202512120021",
+      "customer_name": "Rohan Joshi",
+      "customer_phone": "9819424133",
+      "items": [
+        {
+          "name": "Product 898",
+          "quantity": 2,
+          "price": 222.48,
+          "total": 444.96
+        },
+        {
+          "name": "Product 281",
+          "quantity": 2,
+          "price": 94.65,
+          "total": 189.3
+        },
+        {
+          "name": "Product 168",
+          "quantity": 3,
+          "price": 44.01,
+          "total": 132.03
+        },
+        {
+          "name": "Product 73",
+          "quantity": 1,
+          "price": 36.79,
+          "total": 36.79
+        }
+      ],
+      "subtotal": 803.0799999999999,
+      "discount": 63.83,
+      "gst_amount": 88.71,
+      "total_amount": 827.96,
+      "payment_method": "CASH",
+      "date": "2025-12-03T01:38:02.730031"
+    },
+    {
+      "id": "TXN_000022",
+      "bill_number": "PHM202512120022",
+      "customer_name": "Sneha Sharma",
+      "customer_phone": "9842006401",
+      "items": [
+        {
+          "name": "Product 874",
+          "quantity": 3,
+          "price": 179.51,
+          "total": 538.53
+        },
+        {
+          "name": "Product 214",
+          "quantity": 1,
+          "price": 42.11,
+          "total": 42.11
+        },
+        {
+          "name": "Product 573",
+          "quantity": 1,
+          "price": 456.44,
+          "total": 456.44
+        },
+        {
+          "name": "Product 278",
+          "quantity": 2,
+          "price": 372.96,
+          "total": 745.92
+        },
+        {
+          "name": "Product 128",
+          "quantity": 3,
+          "price": 296.31,
+          "total": 888.9300000000001
+        },
+        {
+          "name": "Product 292",
+          "quantity": 1,
+          "price": 22.74,
+          "total": 22.74
+        },
+        {
+          "name": "Product 811",
+          "quantity": 2,
+          "price": 456.07,
+          "total": 912.14
+        }
+      ],
+      "subtotal": 3606.81,
+      "discount": 98.24,
+      "gst_amount": 421.03,
+      "total_amount": 3929.6,
+      "payment_method": "CASH",
+      "date": "2025-12-11T01:38:02.730050"
+    },
+    {
+      "id": "TXN_000023",
+      "bill_number": "PHM202512120023",
+      "customer_name": "Rohan Joshi",
+      "customer_phone": "9834400285",
+      "items": [
+        {
+          "name": "Product 334",
+          "quantity": 3,
+          "price": 352.72,
+          "total": 1058.16
+        },
+        {
+          "name": "Product 708",
+          "quantity": 2,
+          "price": 33.94,
+          "total": 67.88
+        }
+      ],
+      "subtotal": 1126.04,
+      "discount": 47.03,
+      "gst_amount": 129.48,
+      "total_amount": 1208.49,
+      "payment_method": "UPI",
+      "date": "2025-11-17T01:38:02.730061"
+    },
+    {
+      "id": "TXN_000024",
+      "bill_number": "PHM202512120024",
+      "customer_name": "Meera Desai",
+      "customer_phone": "9831637199",
+      "items": [
+        {
+          "name": "Product 772",
+          "quantity": 2,
+          "price": 101.46,
+          "total": 202.92
+        },
+        {
+          "name": "Product 717",
+          "quantity": 1,
+          "price": 38.55,
+          "total": 38.55
+        }
+      ],
+      "subtotal": 241.46999999999997,
+      "discount": 24.01,
+      "gst_amount": 26.1,
+      "total_amount": 243.56,
+      "payment_method": "UPI",
+      "date": "2025-11-16T01:38:02.730071"
+    },
+    {
+      "id": "TXN_000025",
+      "bill_number": "PHM202512120025",
+      "customer_name": "Sneha Sharma",
+      "customer_phone": "9820744090",
+      "items": [
+        {
+          "name": "Product 606",
+          "quantity": 2,
+          "price": 496.04,
+          "total": 992.08
+        },
+        {
+          "name": "Product 603",
+          "quantity": 2,
+          "price": 458.92,
+          "total": 917.84
+        },
+        {
+          "name": "Product 735",
+          "quantity": 3,
+          "price": 463.31,
+          "total": 1389.93
+        },
+        {
+          "name": "Product 606",
+          "quantity": 2,
+          "price": 264.21,
+          "total": 528.42
+        }
+      ],
+      "subtotal": 3828.2700000000004,
+      "discount": 155.42,
+      "gst_amount": 440.74,
+      "total_amount": 4113.59,
+      "payment_method": "CASH",
+      "date": "2025-12-01T01:38:02.730084"
+    },
+    {
+      "id": "TXN_000026",
+      "bill_number": "PHM202512120026",
+      "customer_name": "Anjali Verma",
+      "customer_phone": "9898601195",
+      "items": [
+        {
+          "name": "Product 866",
+          "quantity": 3,
+          "price": 376.87,
+          "total": 1130.6100000000001
+        },
+        {
+          "name": "Product 643",
+          "quantity": 2,
+          "price": 51.79,
+          "total": 103.58
+        },
+        {
+          "name": "Product 640",
+          "quantity": 2,
+          "price": 466.92,
+          "total": 933.84
+        },
+        {
+          "name": "Product 436",
+          "quantity": 3,
+          "price": 15.76,
+          "total": 47.28
+        }
+      ],
+      "subtotal": 2215.3100000000004,
+      "discount": 31.6,
+      "gst_amount": 262.05,
+      "total_amount": 2445.76,
+      "payment_method": "CASH",
+      "date": "2025-11-27T01:38:02.730098"
+    },
+    {
+      "id": "TXN_000027",
+      "bill_number": "PHM202512120027",
+      "customer_name": "Meera Desai",
+      "customer_phone": "9837693315",
+      "items": [
+        {
+          "name": "Product 185",
+          "quantity": 1,
+          "price": 363.05,
+          "total": 363.05
+        },
+        {
+          "name": "Product 724",
+          "quantity": 3,
+          "price": 200.85,
+          "total": 602.55
+        },
+        {
+          "name": "Product 20",
+          "quantity": 1,
+          "price": 164.11,
+          "total": 164.11
+        }
+      ],
+      "subtotal": 1129.71,
+      "discount": 73.7,
+      "gst_amount": 126.72,
+      "total_amount": 1182.73,
+      "payment_method": "CASH",
+      "date": "2025-11-30T01:38:02.730109"
+    },
+    {
+      "id": "TXN_000028",
+      "bill_number": "PHM202512120028",
+      "customer_name": "Meera Desai",
+      "customer_phone": "9871141343",
+      "items": [
+        {
+          "name": "Product 187",
+          "quantity": 3,
+          "price": 465.84,
+          "total": 1397.52
+        },
+        {
+          "name": "Product 984",
+          "quantity": 2,
+          "price": 186.24,
+          "total": 372.48
+        },
+        {
+          "name": "Product 803",
+          "quantity": 1,
+          "price": 348.64,
+          "total": 348.64
+        },
+        {
+          "name": "Product 190",
+          "quantity": 2,
+          "price": 166.2,
+          "total": 332.4
+        },
+        {
+          "name": "Product 983",
+          "quantity": 3,
+          "price": 67.84,
+          "total": 203.52
+        },
+        {
+          "name": "Product 187",
+          "quantity": 3,
+          "price": 338.98,
+          "total": 1016.94
+        },
+        {
+          "name": "Product 919",
+          "quantity": 1,
+          "price": 258.09,
+          "total": 258.09
+        }
+      ],
+      "subtotal": 3929.59,
+      "discount": 176.39,
+      "gst_amount": 450.38,
+      "total_amount": 4203.58,
+      "payment_method": "CASH",
+      "date": "2025-12-11T01:38:02.730128"
+    },
+    {
+      "id": "TXN_000029",
+      "bill_number": "PHM202512120029",
+      "customer_name": "Rajesh Kumar",
+      "customer_phone": "9864331664",
+      "items": [
+        {
+          "name": "Product 739",
+          "quantity": 3,
+          "price": 483.02,
+          "total": 1449.06
+        },
+        {
+          "name": "Product 706",
+          "quantity": 1,
+          "price": 389.38,
+          "total": 389.38
+        },
+        {
+          "name": "Product 78",
+          "quantity": 2,
+          "price": 329.36,
+          "total": 658.72
+        },
+        {
+          "name": "Product 340",
+          "quantity": 3,
+          "price": 452.23,
+          "total": 1356.69
+        },
+        {
+          "name": "Product 174",
+          "quantity": 3,
+          "price": 385.01,
+          "total": 1155.03
+        }
+      ],
+      "subtotal": 5008.88,
+      "discount": 34.52,
+      "gst_amount": 596.92,
+      "total_amount": 5571.28,
+      "payment_method": "UPI",
+      "date": "2025-11-28T01:38:02.730141"
+    },
+    {
+      "id": "TXN_000030",
+      "bill_number": "PHM202512120030",
+      "customer_name": "Sneha Sharma",
+      "customer_phone": "9844339446",
+      "items": [
+        {
+          "name": "Product 172",
+          "quantity": 2,
+          "price": 448.75,
+          "total": 897.5
+        },
+        {
+          "name": "Product 150",
+          "quantity": 1,
+          "price": 276.34,
+          "total": 276.34
+        },
+        {
+          "name": "Product 138",
+          "quantity": 2,
+          "price": 136.1,
+          "total": 272.2
+        },
+        {
+          "name": "Product 144",
+          "quantity": 1,
+          "price": 391.43,
+          "total": 391.43
+        },
+        {
+          "name": "Product 329",
+          "quantity": 3,
+          "price": 311.75,
+          "total": 935.25
+        },
+        {
+          "name": "Product 586",
+          "quantity": 1,
+          "price": 487.17,
+          "total": 487.17
+        },
+        {
+          "name": "Product 825",
+          "quantity": 2,
+          "price": 153.49,
+          "total": 306.98
+        }
+      ],
+      "subtotal": 3566.8700000000003,
+      "discount": 55.71,
+      "gst_amount": 421.34,
+      "total_amount": 3932.5,
+      "payment_method": "UPI",
+      "date": "2025-11-20T01:38:02.730157"
+    },
+    {
+      "id": "TXN_000031",
+      "bill_number": "PHM202512120031",
+      "customer_name": "Priya Singh",
+      "customer_phone": "9871225720",
+      "items": [
+        {
+          "name": "Product 878",
+          "quantity": 2,
+          "price": 430.76,
+          "total": 861.52
+        },
+        {
+          "name": "Product 610",
+          "quantity": 1,
+          "price": 208.24,
+          "total": 208.24
+        },
+        {
+          "name": "Product 285",
+          "quantity": 1,
+          "price": 56.91,
+          "total": 56.91
+        },
+        {
+          "name": "Product 589",
+          "quantity": 1,
+          "price": 477.5,
+          "total": 477.5
+        }
+      ],
+      "subtotal": 1604.17,
+      "discount": 155.01,
+      "gst_amount": 173.9,
+      "total_amount": 1623.06,
+      "payment_method": "UPI",
+      "date": "2025-11-30T01:38:02.730169"
+    },
+    {
+      "id": "TXN_000032",
+      "bill_number": "PHM202512120032",
+      "customer_name": "Sneha Sharma",
+      "customer_phone": "9825286215",
+      "items": [
+        {
+          "name": "Product 826",
+          "quantity": 1,
+          "price": 237.97,
+          "total": 237.97
+        },
+        {
+          "name": "Product 42",
+          "quantity": 3,
+          "price": 119.43,
+          "total": 358.29
+        }
+      ],
+      "subtotal": 596.26,
+      "discount": 42.91,
+      "gst_amount": 66.4,
+      "total_amount": 619.75,
+      "payment_method": "UPI",
+      "date": "2025-12-05T01:38:02.730178"
+    },
+    {
+      "id": "TXN_000033",
+      "bill_number": "PHM202512120033",
+      "customer_name": "Rohan Joshi",
+      "customer_phone": "9843387485",
+      "items": [
+        {
+          "name": "Product 20",
+          "quantity": 3,
+          "price": 349.36,
+          "total": 1048.08
+        },
+        {
+          "name": "Product 489",
+          "quantity": 2,
+          "price": 195.75,
+          "total": 391.5
+        }
+      ],
+      "subtotal": 1439.58,
+      "discount": 43.35,
+      "gst_amount": 167.55,
+      "total_amount": 1563.78,
+      "payment_method": "CASH",
+      "date": "2025-11-13T01:38:02.730188"
+    },
+    {
+      "id": "TXN_000034",
+      "bill_number": "PHM202512120034",
+      "customer_name": "Suresh Gupta",
+      "customer_phone": "9824852805",
+      "items": [
+        {
+          "name": "Product 310",
+          "quantity": 3,
+          "price": 431.31,
+          "total": 1293.93
+        },
+        {
+          "name": "Product 412",
+          "quantity": 2,
+          "price": 428.36,
+          "total": 856.72
+        },
+        {
+          "name": "Product 575",
+          "quantity": 3,
+          "price": 37.65,
+          "total": 112.94999999999999
+        },
+        {
+          "name": "Product 547",
+          "quantity": 2,
+          "price": 114.1,
+          "total": 228.2
+        },
+        {
+          "name": "Product 7",
+          "quantity": 3,
+          "price": 456.93,
+          "total": 1370.79
+        }
+      ],
+      "subtotal": 3862.5899999999997,
+      "discount": 301.67,
+      "gst_amount": 427.31,
+      "total_amount": 3988.23,
+      "payment_method": "CASH",
+      "date": "2025-11-24T01:38:02.730202"
+    },
+    {
+      "id": "TXN_000035",
+      "bill_number": "PHM202512120035",
+      "customer_name": "Rohan Joshi",
+      "customer_phone": "9810267898",
+      "items": [
+        {
+          "name": "Product 171",
+          "quantity": 1,
+          "price": 220.56,
+          "total": 220.56
+        },
+        {
+          "name": "Product 863",
+          "quantity": 3,
+          "price": 162.43,
+          "total": 487.29
+        }
+      ],
+      "subtotal": 707.85,
+      "discount": 28.27,
+      "gst_amount": 81.55,
+      "total_amount": 761.13,
+      "payment_method": "CASH",
+      "date": "2025-11-16T01:38:02.730211"
+    },
+    {
+      "id": "TXN_000036",
+      "bill_number": "PHM202512120036",
+      "customer_name": "Suresh Gupta",
+      "customer_phone": "9853233005",
+      "items": [
+        {
+          "name": "Product 176",
+          "quantity": 1,
+          "price": 120.96,
+          "total": 120.96
+        },
+        {
+          "name": "Product 770",
+          "quantity": 3,
+          "price": 158.65,
+          "total": 475.95000000000005
+        },
+        {
+          "name": "Product 750",
+          "quantity": 2,
+          "price": 457.16,
+          "total": 914.32
+        },
+        {
+          "name": "Product 283",
+          "quantity": 2,
+          "price": 391.8,
+          "total": 783.6
+        },
+        {
+          "name": "Product 731",
+          "quantity": 2,
+          "price": 324.38,
+          "total": 648.76
+        },
+        {
+          "name": "Product 897",
+          "quantity": 2,
+          "price": 133.07,
+          "total": 266.14
+        },
+        {
+          "name": "Product 604",
+          "quantity": 3,
+          "price": 425.89,
+          "total": 1277.67
+        },
+        {
+          "name": "Product 587",
+          "quantity": 2,
+          "price": 81.49,
+          "total": 162.98
+        }
+      ],
+      "subtotal": 4650.379999999999,
+      "discount": 419.47,
+      "gst_amount": 507.71,
+      "total_amount": 4738.62,
+      "payment_method": "CASH",
+      "date": "2025-11-30T01:38:02.730236"
+    },
+    {
+      "id": "TXN_000037",
+      "bill_number": "PHM202512120037",
+      "customer_name": "Sneha Sharma",
+      "customer_phone": "9835922218",
+      "items": [
+        {
+          "name": "Product 528",
+          "quantity": 3,
+          "price": 429.81,
+          "total": 1289.43
+        },
+        {
+          "name": "Product 565",
+          "quantity": 1,
+          "price": 358.99,
+          "total": 358.99
+        }
+      ],
+      "subtotal": 1648.42,
+      "discount": 104.04,
+      "gst_amount": 185.33,
+      "total_amount": 1729.71,
+      "payment_method": "CASH",
+      "date": "2025-11-12T01:38:02.730245"
+    },
+    {
+      "id": "TXN_000038",
+      "bill_number": "PHM202512120038",
+      "customer_name": "Meera Desai",
+      "customer_phone": "9853118590",
+      "items": [
+        {
+          "name": "Product 308",
+          "quantity": 2,
+          "price": 477.05,
+          "total": 954.1
+        },
+        {
+          "name": "Product 200",
+          "quantity": 1,
+          "price": 224.78,
+          "total": 224.78
+        },
+        {
+          "name": "Product 72",
+          "quantity": 3,
+          "price": 191.44,
+          "total": 574.3199999999999
+        },
+        {
+          "name": "Product 649",
+          "quantity": 2,
+          "price": 136.95,
+          "total": 273.9
+        },
+        {
+          "name": "Product 441",
+          "quantity": 3,
+          "price": 116.1,
+          "total": 348.29999999999995
+        }
+      ],
+      "subtotal": 2375.3999999999996,
+      "discount": 220.46,
+      "gst_amount": 258.59,
+      "total_amount": 2413.53,
+      "payment_method": "CASH",
+      "date": "2025-11-23T01:38:02.730259"
+    },
+    {
+      "id": "TXN_000039",
+      "bill_number": "PHM202512120039",
+      "customer_name": "Anjali Verma",
+      "customer_phone": "9852257594",
+      "items": [
+        {
+          "name": "Product 10",
+          "quantity": 2,
+          "price": 223.54,
+          "total": 447.08
+        },
+        {
+          "name": "Product 796",
+          "quantity": 1,
+          "price": 77.13,
+          "total": 77.13
+        },
+        {
+          "name": "Product 276",
+          "quantity": 1,
+          "price": 356.06,
+          "total": 356.06
+        },
+        {
+          "name": "Product 97",
+          "quantity": 1,
+          "price": 54.89,
+          "total": 54.89
+        },
+        {
+          "name": "Product 273",
+          "quantity": 3,
+          "price": 315.25,
+          "total": 945.75
+        },
+        {
+          "name": "Product 983",
+          "quantity": 3,
+          "price": 300.41,
+          "total": 901.23
+        },
+        {
+          "name": "Product 365",
+          "quantity": 3,
+          "price": 57.31,
+          "total": 171.93
+        }
+      ],
+      "subtotal": 2954.0699999999997,
+      "discount": 157.0,
+      "gst_amount": 335.65,
+      "total_amount": 3132.72,
+      "payment_method": "UPI",
+      "date": "2025-11-15T01:38:02.730279"
+    },
+    {
+      "id": "TXN_000040",
+      "bill_number": "PHM202512120040",
+      "customer_name": "Kavita Nair",
+      "customer_phone": "9823567017",
+      "items": [
+        {
+          "name": "Product 177",
+          "quantity": 1,
+          "price": 243.85,
+          "total": 243.85
+        },
+        {
+          "name": "Product 106",
+          "quantity": 1,
+          "price": 287.39,
+          "total": 287.39
+        },
+        {
+          "name": "Product 643",
+          "quantity": 2,
+          "price": 282.24,
+          "total": 564.48
+        },
+        {
+          "name": "Product 453",
+          "quantity": 3,
+          "price": 137.17,
+          "total": 411.51
+        }
+      ],
+      "subtotal": 1507.23,
+      "discount": 103.04,
+      "gst_amount": 168.5,
+      "total_amount": 1572.69,
+      "payment_method": "UPI",
+      "date": "2025-12-06T01:38:02.730294"
+    },
+    {
+      "id": "TXN_000041",
+      "bill_number": "PHM202512120041",
+      "customer_name": "Priya Singh",
+      "customer_phone": "9890772046",
+      "items": [
+        {
+          "name": "Product 179",
+          "quantity": 3,
+          "price": 111.4,
+          "total": 334.20000000000005
+        },
+        {
+          "name": "Product 423",
+          "quantity": 2,
+          "price": 148.67,
+          "total": 297.34
+        },
+        {
+          "name": "Product 867",
+          "quantity": 2,
+          "price": 47.73,
+          "total": 95.46
+        },
+        {
+          "name": "Product 938",
+          "quantity": 3,
+          "price": 155.14,
+          "total": 465.41999999999996
+        },
+        {
+          "name": "Product 587",
+          "quantity": 3,
+          "price": 410.59,
+          "total": 1231.77
+        },
+        {
+          "name": "Product 771",
+          "quantity": 2,
+          "price": 275.08,
+          "total": 550.16
+        },
+        {
+          "name": "Product 967",
+          "quantity": 3,
+          "price": 146.93,
+          "total": 440.79
+        },
+        {
+          "name": "Product 254",
+          "quantity": 1,
+          "price": 98.15,
+          "total": 98.15
+        }
+      ],
+      "subtotal": 3513.29,
+      "discount": 285.69,
+      "gst_amount": 387.31,
+      "total_amount": 3614.91,
+      "payment_method": "UPI",
+      "date": "2025-12-03T01:38:02.730314"
+    },
+    {
+      "id": "TXN_000042",
+      "bill_number": "PHM202512120042",
+      "customer_name": "Suresh Gupta",
+      "customer_phone": "9837554673",
+      "items": [
+        {
+          "name": "Product 509",
+          "quantity": 3,
+          "price": 420.03,
+          "total": 1260.09
+        },
+        {
+          "name": "Product 315",
+          "quantity": 1,
+          "price": 477.98,
+          "total": 477.98
+        },
+        {
+          "name": "Product 219",
+          "quantity": 1,
+          "price": 396.9,
+          "total": 396.9
+        },
+        {
+          "name": "Product 481",
+          "quantity": 2,
+          "price": 43.77,
+          "total": 87.54
+        }
+      ],
+      "subtotal": 2222.5099999999998,
+      "discount": 88.49,
+      "gst_amount": 256.08,
+      "total_amount": 2390.1,
+      "payment_method": "UPI",
+      "date": "2025-11-23T01:38:02.730327"
+    },
+    {
+      "id": "TXN_000043",
+      "bill_number": "PHM202512120043",
+      "customer_name": "Rohan Joshi",
+      "customer_phone": "9892590679",
+      "items": [
+        {
+          "name": "Product 766",
+          "quantity": 1,
+          "price": 34.97,
+          "total": 34.97
+        },
+        {
+          "name": "Product 479",
+          "quantity": 1,
+          "price": 431.07,
+          "total": 431.07
+        },
+        {
+          "name": "Product 36",
+          "quantity": 3,
+          "price": 481.73,
+          "total": 1445.19
+        },
+        {
+          "name": "Product 735",
+          "quantity": 2,
+          "price": 420.94,
+          "total": 841.88
+        },
+        {
+          "name": "Product 113",
+          "quantity": 1,
+          "price": 411.94,
+          "total": 411.94
+        }
+      ],
+      "subtotal": 3165.05,
+      "discount": 129.31,
+      "gst_amount": 364.29,
+      "total_amount": 3400.03,
+      "payment_method": "CASH",
+      "date": "2025-12-08T01:38:02.730341"
+    },
+    {
+      "id": "TXN_000044",
+      "bill_number": "PHM202512120044",
+      "customer_name": "Rajesh Kumar",
+      "customer_phone": "9847741176",
+      "items": [
+        {
+          "name": "Product 357",
+          "quantity": 3,
+          "price": 460.51,
+          "total": 1381.53
+        },
+        {
+          "name": "Product 80",
+          "quantity": 3,
+          "price": 224.13,
+          "total": 672.39
+        }
+      ],
+      "subtotal": 2053.92,
+      "discount": 33.74,
+      "gst_amount": 242.42,
+      "total_amount": 2262.6,
+      "payment_method": "UPI",
+      "date": "2025-12-05T01:38:02.730356"
+    },
+    {
+      "id": "TXN_000045",
+      "bill_number": "PHM202512120045",
+      "customer_name": "Amit Patel",
+      "customer_phone": "9886728977",
+      "items": [
+        {
+          "name": "Product 790",
+          "quantity": 2,
+          "price": 93.26,
+          "total": 186.52
+        },
+        {
+          "name": "Product 281",
+          "quantity": 1,
+          "price": 120.85,
+          "total": 120.85
+        },
+        {
+          "name": "Product 847",
+          "quantity": 2,
+          "price": 375.76,
+          "total": 751.52
+        }
+      ],
+      "subtotal": 1058.8899999999999,
+      "discount": 1.46,
+      "gst_amount": 126.89,
+      "total_amount": 1184.32,
+      "payment_method": "CASH",
+      "date": "2025-11-29T01:38:02.730367"
+    },
+    {
+      "id": "TXN_000046",
+      "bill_number": "PHM202512120046",
+      "customer_name": "Kavita Nair",
+      "customer_phone": "9874952977",
+      "items": [
+        {
+          "name": "Product 246",
+          "quantity": 3,
+          "price": 348.93,
+          "total": 1046.79
+        },
+        {
+          "name": "Product 976",
+          "quantity": 2,
+          "price": 297.55,
+          "total": 595.1
+        },
+        {
+          "name": "Product 525",
+          "quantity": 1,
+          "price": 255.74,
+          "total": 255.74
+        },
+        {
+          "name": "Product 148",
+          "quantity": 3,
+          "price": 244.56,
+          "total": 733.6800000000001
+        },
+        {
+          "name": "Product 149",
+          "quantity": 1,
+          "price": 374.86,
+          "total": 374.86
+        },
+        {
+          "name": "Product 866",
+          "quantity": 2,
+          "price": 436.17,
+          "total": 872.34
+        },
+        {
+          "name": "Product 397",
+          "quantity": 3,
+          "price": 263.45,
+          "total": 790.3499999999999
+        }
+      ],
+      "subtotal": 4668.860000000001,
+      "discount": 180.8,
+      "gst_amount": 538.57,
+      "total_amount": 5026.63,
+      "payment_method": "UPI",
+      "date": "2025-12-11T01:38:02.730383"
+    },
+    {
+      "id": "TXN_000047",
+      "bill_number": "PHM202512120047",
+      "customer_name": "Meera Desai",
+      "customer_phone": "9824803998",
+      "items": [
+        {
+          "name": "Product 424",
+          "quantity": 3,
+          "price": 333.82,
+          "total": 1001.46
+        },
+        {
+          "name": "Product 152",
+          "quantity": 1,
+          "price": 24.63,
+          "total": 24.63
+        }
+      ],
+      "subtotal": 1026.0900000000001,
+      "discount": 43.51,
+      "gst_amount": 117.91,
+      "total_amount": 1100.49,
+      "payment_method": "UPI",
+      "date": "2025-11-24T01:38:02.730392"
+    },
+    {
+      "id": "TXN_000048",
+      "bill_number": "PHM202512120048",
+      "customer_name": "Vikram Reddy",
+      "customer_phone": "9843183993",
+      "items": [
+        {
+          "name": "Product 137",
+          "quantity": 3,
+          "price": 305.29,
+          "total": 915.8700000000001
+        },
+        {
+          "name": "Product 12",
+          "quantity": 3,
+          "price": 132.04,
+          "total": 396.12
+        }
+      ],
+      "subtotal": 1311.9900000000002,
+      "discount": 100.91,
+      "gst_amount": 145.33,
+      "total_amount": 1356.41,
+      "payment_method": "UPI",
+      "date": "2025-11-19T01:38:02.730401"
+    },
+    {
+      "id": "TXN_000049",
+      "bill_number": "PHM202512120049",
+      "customer_name": "Priya Singh",
+      "customer_phone": "9843575970",
+      "items": [
+        {
+          "name": "Product 457",
+          "quantity": 2,
+          "price": 134.15,
+          "total": 268.3
+        },
+        {
+          "name": "Product 538",
+          "quantity": 1,
+          "price": 382.29,
+          "total": 382.29
+        },
+        {
+          "name": "Product 773",
+          "quantity": 1,
+          "price": 394.88,
+          "total": 394.88
+        },
+        {
+          "name": "Product 857",
+          "quantity": 1,
+          "price": 161.93,
+          "total": 161.93
+        },
+        {
+          "name": "Product 237",
+          "quantity": 1,
+          "price": 219.68,
+          "total": 219.68
+        },
+        {
+          "name": "Product 174",
+          "quantity": 3,
+          "price": 168.35,
+          "total": 505.04999999999995
+        }
+      ],
+      "subtotal": 1932.13,
+      "discount": 45.42,
+      "gst_amount": 226.41,
+      "total_amount": 2113.12,
+      "payment_method": "UPI",
+      "date": "2025-11-20T01:38:02.730416"
+    },
+    {
+      "id": "TXN_000050",
+      "bill_number": "PHM202512120050",
+      "customer_name": "Suresh Gupta",
+      "customer_phone": "9813285263",
+      "items": [
+        {
+          "name": "Product 766",
+          "quantity": 3,
+          "price": 348.76,
+          "total": 1046.28
+        },
+        {
+          "name": "Product 262",
+          "quantity": 1,
+          "price": 105.12,
+          "total": 105.12
+        },
+        {
+          "name": "Product 930",
+          "quantity": 3,
+          "price": 175.11,
+          "total": 525.33
+        },
+        {
+          "name": "Product 910",
+          "quantity": 1,
+          "price": 81.18,
+          "total": 81.18
+        },
+        {
+          "name": "Product 205",
+          "quantity": 2,
+          "price": 369.53,
+          "total": 739.06
+        },
+        {
+          "name": "Product 221",
+          "quantity": 2,
+          "price": 45.84,
+          "total": 91.68
+        },
+        {
+          "name": "Product 483",
+          "quantity": 2,
+          "price": 100.28,
+          "total": 200.56
+        }
+      ],
+      "subtotal": 2789.21,
+      "discount": 259.32,
+      "gst_amount": 303.59,
+      "total_amount": 2833.48,
+      "payment_method": "UPI",
+      "date": "2025-11-13T01:38:02.730433"
+    },
+    {
+      "id": "TXN_000051",
+      "bill_number": "PHM202512120051",
+      "customer_name": "Priya Singh",
+      "customer_phone": "9888353716",
+      "items": [
+        {
+          "name": "Product 804",
+          "quantity": 3,
+          "price": 449.94,
+          "total": 1349.82
+        },
+        {
+          "name": "Product 297",
+          "quantity": 3,
+          "price": 286.38,
+          "total": 859.14
+        },
+        {
+          "name": "Product 181",
+          "quantity": 3,
+          "price": 107.31,
+          "total": 321.93
+        },
+        {
+          "name": "Product 999",
+          "quantity": 2,
+          "price": 437.46,
+          "total": 874.92
+        }
+      ],
+      "subtotal": 3405.81,
+      "discount": 204.81,
+      "gst_amount": 384.12,
+      "total_amount": 3585.12,
+      "payment_method": "CASH",
+      "date": "2025-12-10T01:38:02.730444"
+    },
+    {
+      "id": "TXN_000052",
+      "bill_number": "PHM202512120052",
+      "customer_name": "Priya Singh",
+      "customer_phone": "9873882495",
+      "items": [
+        {
+          "name": "Product 394",
+          "quantity": 3,
+          "price": 342.97,
+          "total": 1028.91
+        },
+        {
+          "name": "Product 875",
+          "quantity": 3,
+          "price": 81.82,
+          "total": 245.45999999999998
+        },
+        {
+          "name": "Product 968",
+          "quantity": 3,
+          "price": 291.16,
+          "total": 873.48
+        },
+        {
+          "name": "Product 627",
+          "quantity": 1,
+          "price": 92.65,
+          "total": 92.65
+        },
+        {
+          "name": "Product 69",
+          "quantity": 1,
+          "price": 168.82,
+          "total": 168.82
+        },
+        {
+          "name": "Product 724",
+          "quantity": 1,
+          "price": 407.78,
+          "total": 407.78
+        }
+      ],
+      "subtotal": 2817.1000000000004,
+      "discount": 240.19,
+      "gst_amount": 309.23,
+      "total_amount": 2886.14,
+      "payment_method": "CASH",
+      "date": "2025-12-04T01:38:02.730461"
+    },
+    {
+      "id": "TXN_000053",
+      "bill_number": "PHM202512120053",
+      "customer_name": "Kavita Nair",
+      "customer_phone": "9851882132",
+      "items": [
+        {
+          "name": "Product 601",
+          "quantity": 2,
+          "price": 69.65,
+          "total": 139.3
+        },
+        {
+          "name": "Product 356",
+          "quantity": 2,
+          "price": 89.08,
+          "total": 178.16
+        },
+        {
+          "name": "Product 663",
+          "quantity": 2,
+          "price": 190.29,
+          "total": 380.58
+        }
+      ],
+      "subtotal": 698.04,
+      "discount": 67.68,
+      "gst_amount": 75.64,
+      "total_amount": 706.0,
+      "payment_method": "CASH",
+      "date": "2025-11-16T01:38:02.730472"
+    },
+    {
+      "id": "TXN_000054",
+      "bill_number": "PHM202512120054",
+      "customer_name": "Kavita Nair",
+      "customer_phone": "9887692083",
+      "items": [
+        {
+          "name": "Product 417",
+          "quantity": 2,
+          "price": 428.55,
+          "total": 857.1
+        },
+        {
+          "name": "Product 644",
+          "quantity": 3,
+          "price": 448.11,
+          "total": 1344.33
+        },
+        {
+          "name": "Product 716",
+          "quantity": 2,
+          "price": 197.22,
+          "total": 394.44
+        }
+      ],
+      "subtotal": 2595.87,
+      "discount": 77.92,
+      "gst_amount": 302.15,
+      "total_amount": 2820.1,
+      "payment_method": "UPI",
+      "date": "2025-11-17T01:38:02.730483"
+    },
+    {
+      "id": "TXN_000055",
+      "bill_number": "PHM202512120055",
+      "customer_name": "Anjali Verma",
+      "customer_phone": "9857610603",
+      "items": [
+        {
+          "name": "Product 966",
+          "quantity": 2,
+          "price": 245.36,
+          "total": 490.72
+        },
+        {
+          "name": "Product 739",
+          "quantity": 1,
+          "price": 389.4,
+          "total": 389.4
+        },
+        {
+          "name": "Product 963",
+          "quantity": 2,
+          "price": 148.15,
+          "total": 296.3
+        },
+        {
+          "name": "Product 644",
+          "quantity": 2,
+          "price": 245.01,
+          "total": 490.02
+        }
+      ],
+      "subtotal": 1666.44,
+      "discount": 3.83,
+      "gst_amount": 199.51,
+      "total_amount": 1862.12,
+      "payment_method": "UPI",
+      "date": "2025-11-18T01:38:02.730496"
+    },
+    {
+      "id": "TXN_000056",
+      "bill_number": "PHM202512120056",
+      "customer_name": "Suresh Gupta",
+      "customer_phone": "9896640590",
+      "items": [
+        {
+          "name": "Product 718",
+          "quantity": 1,
+          "price": 119.82,
+          "total": 119.82
+        },
+        {
+          "name": "Product 841",
+          "quantity": 2,
+          "price": 258.55,
+          "total": 517.1
+        },
+        {
+          "name": "Product 983",
+          "quantity": 2,
+          "price": 447.74,
+          "total": 895.48
+        },
+        {
+          "name": "Product 330",
+          "quantity": 2,
+          "price": 237.98,
+          "total": 475.96
+        },
+        {
+          "name": "Product 404",
+          "quantity": 1,
+          "price": 497.28,
+          "total": 497.28
+        }
+      ],
+      "subtotal": 2505.6400000000003,
+      "discount": 87.83,
+      "gst_amount": 290.14,
+      "total_amount": 2707.95,
+      "payment_method": "UPI",
+      "date": "2025-11-13T01:38:02.730509"
+    },
+    {
+      "id": "TXN_000057",
+      "bill_number": "PHM202512120057",
+      "customer_name": "Priya Singh",
+      "customer_phone": "9885037567",
+      "items": [
+        {
+          "name": "Product 187",
+          "quantity": 1,
+          "price": 399.58,
+          "total": 399.58
+        },
+        {
+          "name": "Product 908",
+          "quantity": 1,
+          "price": 358.99,
+          "total": 358.99
+        },
+        {
+          "name": "Product 699",
+          "quantity": 2,
+          "price": 99.13,
+          "total": 198.26
+        },
+        {
+          "name": "Product 882",
+          "quantity": 1,
+          "price": 472.64,
+          "total": 472.64
+        }
+      ],
+      "subtotal": 1429.4699999999998,
+      "discount": 113.04,
+      "gst_amount": 157.97,
+      "total_amount": 1474.4,
+      "payment_method": "UPI",
+      "date": "2025-11-25T01:38:02.730521"
+    },
+    {
+      "id": "TXN_000058",
+      "bill_number": "PHM202512120058",
+      "customer_name": "Rajesh Kumar",
+      "customer_phone": "9858714602",
+      "items": [
+        {
+          "name": "Product 476",
+          "quantity": 2,
+          "price": 296.8,
+          "total": 593.6
+        },
+        {
+          "name": "Product 644",
+          "quantity": 2,
+          "price": 269.75,
+          "total": 539.5
+        }
+      ],
+      "subtotal": 1133.1,
+      "discount": 89.75,
+      "gst_amount": 125.2,
+      "total_amount": 1168.55,
+      "payment_method": "UPI",
+      "date": "2025-11-12T01:38:02.730531"
+    },
+    {
+      "id": "TXN_000059",
+      "bill_number": "PHM202512120059",
+      "customer_name": "Amit Patel",
+      "customer_phone": "9856219556",
+      "items": [
+        {
+          "name": "Product 243",
+          "quantity": 3,
+          "price": 336.1,
+          "total": 1008.3000000000001
+        },
+        {
+          "name": "Product 579",
+          "quantity": 1,
+          "price": 103.66,
+          "total": 103.66
+        },
+        {
+          "name": "Product 448",
+          "quantity": 2,
+          "price": 307.39,
+          "total": 614.78
+        },
+        {
+          "name": "Product 294",
+          "quantity": 1,
+          "price": 410.61,
+          "total": 410.61
+        }
+      ],
+      "subtotal": 2137.35,
+      "discount": 3.13,
+      "gst_amount": 256.11,
+      "total_amount": 2390.33,
+      "payment_method": "CASH",
+      "date": "2025-12-06T01:38:02.730543"
+    },
+    {
+      "id": "TXN_000060",
+      "bill_number": "PHM202512120060",
+      "customer_name": "Rajesh Kumar",
+      "customer_phone": "9871163723",
+      "items": [
+        {
+          "name": "Product 724",
+          "quantity": 3,
+          "price": 347.6,
+          "total": 1042.8000000000002
+        },
+        {
+          "name": "Product 830",
+          "quantity": 3,
+          "price": 414.46,
+          "total": 1243.3799999999999
+        }
+      ],
+      "subtotal": 2286.1800000000003,
+      "discount": 145.02,
+      "gst_amount": 256.94,
+      "total_amount": 2398.1,
+      "payment_method": "UPI",
+      "date": "2025-12-11T01:38:02.730553"
+    },
+    {
+      "id": "TXN_000061",
+      "bill_number": "PHM202512120061",
+      "customer_name": "Rohan Joshi",
+      "customer_phone": "9815492795",
+      "items": [
+        {
+          "name": "Product 354",
+          "quantity": 3,
+          "price": 113.95,
+          "total": 341.85
+        },
+        {
+          "name": "Product 356",
+          "quantity": 1,
+          "price": 322.21,
+          "total": 322.21
+        },
+        {
+          "name": "Product 815",
+          "quantity": 2,
+          "price": 290.06,
+          "total": 580.12
+        },
+        {
+          "name": "Product 621",
+          "quantity": 2,
+          "price": 172.01,
+          "total": 344.02
+        },
+        {
+          "name": "Product 423",
+          "quantity": 1,
+          "price": 194.87,
+          "total": 194.87
+        }
+      ],
+      "subtotal": 1783.0699999999997,
+      "discount": 100.81,
+      "gst_amount": 201.87,
+      "total_amount": 1884.13,
+      "payment_method": "CASH",
+      "date": "2025-12-09T01:38:02.730567"
+    },
+    {
+      "id": "TXN_000062",
+      "bill_number": "PHM202512120062",
+      "customer_name": "Suresh Gupta",
+      "customer_phone": "9847192425",
+      "items": [
+        {
+          "name": "Product 88",
+          "quantity": 1,
+          "price": 206.83,
+          "total": 206.83
+        },
+        {
+          "name": "Product 342",
+          "quantity": 3,
+          "price": 26.81,
+          "total": 80.42999999999999
+        },
+        {
+          "name": "Product 342",
+          "quantity": 2,
+          "price": 48.21,
+          "total": 96.42
+        },
+        {
+          "name": "Product 180",
+          "quantity": 1,
+          "price": 138.57,
+          "total": 138.57
+        },
+        {
+          "name": "Product 67",
+          "quantity": 3,
+          "price": 270.76,
+          "total": 812.28
+        },
+        {
+          "name": "Product 31",
+          "quantity": 3,
+          "price": 65.35,
+          "total": 196.04999999999998
+        },
+        {
+          "name": "Product 535",
+          "quantity": 1,
+          "price": 360.09,
+          "total": 360.09
+        }
+      ],
+      "subtotal": 1890.6699999999998,
+      "discount": 7.25,
+      "gst_amount": 226.01,
+      "total_amount": 2109.43,
+      "payment_method": "CASH",
+      "date": "2025-12-09T01:38:02.730585"
+    },
+    {
+      "id": "TXN_000063",
+      "bill_number": "PHM202512120063",
+      "customer_name": "Sneha Sharma",
+      "customer_phone": "9814245023",
+      "items": [
+        {
+          "name": "Product 362",
+          "quantity": 1,
+          "price": 48.62,
+          "total": 48.62
+        },
+        {
+          "name": "Product 50",
+          "quantity": 2,
+          "price": 401.12,
+          "total": 802.24
+        },
+        {
+          "name": "Product 957",
+          "quantity": 1,
+          "price": 47.92,
+          "total": 47.92
+        },
+        {
+          "name": "Product 989",
+          "quantity": 1,
+          "price": 481.51,
+          "total": 481.51
+        }
+      ],
+      "subtotal": 1380.29,
+      "discount": 78.77,
+      "gst_amount": 156.18,
+      "total_amount": 1457.7,
+      "payment_method": "CASH",
+      "date": "2025-12-11T01:38:02.730599"
+    },
+    {
+      "id": "TXN_000064",
+      "bill_number": "PHM202512120064",
+      "customer_name": "Kavita Nair",
+      "customer_phone": "9822244002",
+      "items": [
+        {
+          "name": "Product 349",
+          "quantity": 3,
+          "price": 466.67,
+          "total": 1400.01
+        },
+        {
+          "name": "Product 249",
+          "quantity": 1,
+          "price": 332.74,
+          "total": 332.74
+        },
+        {
+          "name": "Product 787",
+          "quantity": 1,
+          "price": 59.06,
+          "total": 59.06
+        },
+        {
+          "name": "Product 527",
+          "quantity": 1,
+          "price": 460.34,
+          "total": 460.34
+        }
+      ],
+      "subtotal": 2252.15,
+      "discount": 16.84,
+      "gst_amount": 268.24,
+      "total_amount": 2503.55,
+      "payment_method": "UPI",
+      "date": "2025-11-16T01:38:02.730610"
+    },
+    {
+      "id": "TXN_000065",
+      "bill_number": "PHM202512120065",
+      "customer_name": "Rajesh Kumar",
+      "customer_phone": "9821556702",
+      "items": [
+        {
+          "name": "Product 780",
+          "quantity": 1,
+          "price": 426.26,
+          "total": 426.26
+        },
+        {
+          "name": "Product 593",
+          "quantity": 2,
+          "price": 89.81,
+          "total": 179.62
+        },
+        {
+          "name": "Product 830",
+          "quantity": 1,
+          "price": 131.77,
+          "total": 131.77
+        },
+        {
+          "name": "Product 830",
+          "quantity": 2,
+          "price": 157.37,
+          "total": 314.74
+        },
+        {
+          "name": "Product 614",
+          "quantity": 3,
+          "price": 137.75,
+          "total": 413.25
+        },
+        {
+          "name": "Product 189",
+          "quantity": 1,
+          "price": 200.52,
+          "total": 200.52
+        },
+        {
+          "name": "Product 358",
+          "quantity": 2,
+          "price": 142.41,
+          "total": 284.82
+        }
+      ],
+      "subtotal": 1950.9799999999998,
+      "discount": 47.05,
+      "gst_amount": 228.47,
+      "total_amount": 2132.4,
+      "payment_method": "CASH",
+      "date": "2025-11-22T01:38:02.730625"
+    },
+    {
+      "id": "TXN_000066",
+      "bill_number": "PHM202512120066",
+      "customer_name": "Rohan Joshi",
+      "customer_phone": "9837374486",
+      "items": [
+        {
+          "name": "Product 992",
+          "quantity": 2,
+          "price": 381.71,
+          "total": 763.42
+        },
+        {
+          "name": "Product 583",
+          "quantity": 1,
+          "price": 134.34,
+          "total": 134.34
+        },
+        {
+          "name": "Product 831",
+          "quantity": 3,
+          "price": 120.6,
+          "total": 361.79999999999995
+        },
+        {
+          "name": "Product 558",
+          "quantity": 3,
+          "price": 228.0,
+          "total": 684.0
+        },
+        {
+          "name": "Product 960",
+          "quantity": 1,
+          "price": 244.59,
+          "total": 244.59
+        },
+        {
+          "name": "Product 695",
+          "quantity": 3,
+          "price": 51.97,
+          "total": 155.91
+        }
+      ],
+      "subtotal": 2344.06,
+      "discount": 66.1,
+      "gst_amount": 273.36,
+      "total_amount": 2551.32,
+      "payment_method": "CASH",
+      "date": "2025-11-20T01:38:02.730639"
+    },
+    {
+      "id": "TXN_000067",
+      "bill_number": "PHM202512120067",
+      "customer_name": "Rajesh Kumar",
+      "customer_phone": "9894231633",
+      "items": [
+        {
+          "name": "Product 63",
+          "quantity": 2,
+          "price": 364.4,
+          "total": 728.8
+        },
+        {
+          "name": "Product 213",
+          "quantity": 2,
+          "price": 128.86,
+          "total": 257.72
+        },
+        {
+          "name": "Product 74",
+          "quantity": 1,
+          "price": 415.9,
+          "total": 415.9
+        },
+        {
+          "name": "Product 780",
+          "quantity": 2,
+          "price": 253.0,
+          "total": 506.0
+        }
+      ],
+      "subtotal": 1908.42,
+      "discount": 126.04,
+      "gst_amount": 213.89,
+      "total_amount": 1996.27,
+      "payment_method": "UPI",
+      "date": "2025-12-01T01:38:02.730651"
+    },
+    {
+      "id": "TXN_000068",
+      "bill_number": "PHM202512120068",
+      "customer_name": "Meera Desai",
+      "customer_phone": "9899529850",
+      "items": [
+        {
+          "name": "Product 27",
+          "quantity": 3,
+          "price": 297.9,
+          "total": 893.6999999999999
+        },
+        {
+          "name": "Product 428",
+          "quantity": 3,
+          "price": 329.61,
+          "total": 988.83
+        },
+        {
+          "name": "Product 56",
+          "quantity": 2,
+          "price": 19.02,
+          "total": 38.04
+        },
+        {
+          "name": "Product 331",
+          "quantity": 3,
+          "price": 152.58,
+          "total": 457.74
+        },
+        {
+          "name": "Product 792",
+          "quantity": 2,
+          "price": 484.2,
+          "total": 968.4
+        },
+        {
+          "name": "Product 834",
+          "quantity": 1,
+          "price": 434.33,
+          "total": 434.33
+        },
+        {
+          "name": "Product 701",
+          "quantity": 3,
+          "price": 35.53,
+          "total": 106.59
+        },
+        {
+          "name": "Product 373",
+          "quantity": 2,
+          "price": 366.51,
+          "total": 733.02
+        }
+      ],
+      "subtotal": 4620.65,
+      "discount": 99.74,
+      "gst_amount": 542.51,
+      "total_amount": 5063.42,
+      "payment_method": "UPI",
+      "date": "2025-12-02T01:38:02.730666"
+    },
+    {
+      "id": "TXN_000069",
+      "bill_number": "PHM202512120069",
+      "customer_name": "Meera Desai",
+      "customer_phone": "9830588521",
+      "items": [
+        {
+          "name": "Product 163",
+          "quantity": 2,
+          "price": 22.92,
+          "total": 45.84
+        },
+        {
+          "name": "Product 686",
+          "quantity": 2,
+          "price": 116.14,
+          "total": 232.28
+        }
+      ],
+      "subtotal": 278.12,
+      "discount": 19.86,
+      "gst_amount": 30.99,
+      "total_amount": 289.25,
+      "payment_method": "UPI",
+      "date": "2025-11-27T01:38:02.730674"
+    },
+    {
+      "id": "TXN_000070",
+      "bill_number": "PHM202512120070",
+      "customer_name": "Kavita Nair",
+      "customer_phone": "9838314446",
+      "items": [
+        {
+          "name": "Product 337",
+          "quantity": 3,
+          "price": 127.58,
+          "total": 382.74
+        },
+        {
+          "name": "Product 784",
+          "quantity": 1,
+          "price": 86.94,
+          "total": 86.94
+        },
+        {
+          "name": "Product 455",
+          "quantity": 1,
+          "price": 271.82,
+          "total": 271.82
+        },
+        {
+          "name": "Product 379",
+          "quantity": 2,
+          "price": 169.74,
+          "total": 339.48
+        }
+      ],
+      "subtotal": 1080.98,
+      "discount": 42.59,
+      "gst_amount": 124.61,
+      "total_amount": 1163.0,
+      "payment_method": "UPI",
+      "date": "2025-12-10T01:38:02.730684"
+    },
+    {
+      "id": "TXN_000071",
+      "bill_number": "PHM202512120071",
+      "customer_name": "Priya Singh",
+      "customer_phone": "9853288968",
+      "items": [
+        {
+          "name": "Product 795",
+          "quantity": 3,
+          "price": 85.31,
+          "total": 255.93
+        },
+        {
+          "name": "Product 54",
+          "quantity": 2,
+          "price": 332.95,
+          "total": 665.9
+        },
+        {
+          "name": "Product 218",
+          "quantity": 2,
+          "price": 243.34,
+          "total": 486.68
+        },
+        {
+          "name": "Product 869",
+          "quantity": 2,
+          "price": 298.99,
+          "total": 597.98
+        },
+        {
+          "name": "Product 622",
+          "quantity": 3,
+          "price": 246.0,
+          "total": 738.0
+        },
+        {
+          "name": "Product 623",
+          "quantity": 3,
+          "price": 78.36,
+          "total": 235.07999999999998
+        },
+        {
+          "name": "Product 579",
+          "quantity": 1,
+          "price": 141.39,
+          "total": 141.39
+        },
+        {
+          "name": "Product 66",
+          "quantity": 2,
+          "price": 143.56,
+          "total": 287.12
+        }
+      ],
+      "subtotal": 3408.0799999999995,
+      "discount": 287.63,
+      "gst_amount": 374.45,
+      "total_amount": 3494.9,
+      "payment_method": "CASH",
+      "date": "2025-11-29T01:38:02.730701"
+    },
+    {
+      "id": "TXN_000072",
+      "bill_number": "PHM202512120072",
+      "customer_name": "Sneha Sharma",
+      "customer_phone": "9864699224",
+      "items": [
+        {
+          "name": "Product 727",
+          "quantity": 2,
+          "price": 394.59,
+          "total": 789.18
+        },
+        {
+          "name": "Product 44",
+          "quantity": 3,
+          "price": 40.09,
+          "total": 120.27000000000001
+        },
+        {
+          "name": "Product 234",
+          "quantity": 2,
+          "price": 330.26,
+          "total": 660.52
+        },
+        {
+          "name": "Product 787",
+          "quantity": 1,
+          "price": 155.8,
+          "total": 155.8
+        },
+        {
+          "name": "Product 523",
+          "quantity": 3,
+          "price": 67.25,
+          "total": 201.75
+        }
+      ],
+      "subtotal": 1927.5199999999998,
+      "discount": 16.24,
+      "gst_amount": 229.35,
+      "total_amount": 2140.63,
+      "payment_method": "CASH",
+      "date": "2025-12-02T01:38:02.730715"
+    },
+    {
+      "id": "TXN_000073",
+      "bill_number": "PHM202512120073",
+      "customer_name": "Kavita Nair",
+      "customer_phone": "9822082659",
+      "items": [
+        {
+          "name": "Product 100",
+          "quantity": 1,
+          "price": 279.99,
+          "total": 279.99
+        },
+        {
+          "name": "Product 664",
+          "quantity": 1,
+          "price": 217.17,
+          "total": 217.17
+        },
+        {
+          "name": "Product 722",
+          "quantity": 3,
+          "price": 97.21,
+          "total": 291.63
+        },
+        {
+          "name": "Product 441",
+          "quantity": 1,
+          "price": 201.68,
+          "total": 201.68
+        },
+        {
+          "name": "Product 133",
+          "quantity": 3,
+          "price": 264.07,
+          "total": 792.21
+        },
+        {
+          "name": "Product 508",
+          "quantity": 2,
+          "price": 30.94,
+          "total": 61.88
+        },
+        {
+          "name": "Product 596",
+          "quantity": 1,
+          "price": 234.72,
+          "total": 234.72
+        }
+      ],
+      "subtotal": 2079.28,
+      "discount": 64.64,
+      "gst_amount": 241.76,
+      "total_amount": 2256.4,
+      "payment_method": "CASH",
+      "date": "2025-11-29T01:38:02.730732"
+    },
+    {
+      "id": "TXN_000074",
+      "bill_number": "PHM202512120074",
+      "customer_name": "Kavita Nair",
+      "customer_phone": "9876000271",
+      "items": [
+        {
+          "name": "Product 101",
+          "quantity": 1,
+          "price": 156.15,
+          "total": 156.15
+        },
+        {
+          "name": "Product 354",
+          "quantity": 1,
+          "price": 482.78,
+          "total": 482.78
+        },
+        {
+          "name": "Product 903",
+          "quantity": 1,
+          "price": 184.85,
+          "total": 184.85
+        },
+        {
+          "name": "Product 695",
+          "quantity": 1,
+          "price": 489.47,
+          "total": 489.47
+        },
+        {
+          "name": "Product 937",
+          "quantity": 2,
+          "price": 38.36,
+          "total": 76.72
+        },
+        {
+          "name": "Product 934",
+          "quantity": 3,
+          "price": 126.92,
+          "total": 380.76
+        },
+        {
+          "name": "Product 293",
+          "quantity": 2,
+          "price": 365.06,
+          "total": 730.12
+        }
+      ],
+      "subtotal": 2500.85,
+      "discount": 149.93,
+      "gst_amount": 282.11,
+      "total_amount": 2633.03,
+      "payment_method": "UPI",
+      "date": "2025-11-17T01:38:02.730746"
+    },
+    {
+      "id": "TXN_000075",
+      "bill_number": "PHM202512120075",
+      "customer_name": "Sneha Sharma",
+      "customer_phone": "9828899832",
+      "items": [
+        {
+          "name": "Product 735",
+          "quantity": 2,
+          "price": 157.74,
+          "total": 315.48
+        },
+        {
+          "name": "Product 765",
+          "quantity": 2,
+          "price": 204.05,
+          "total": 408.1
+        },
+        {
+          "name": "Product 925",
+          "quantity": 1,
+          "price": 336.28,
+          "total": 336.28
+        },
+        {
+          "name": "Product 718",
+          "quantity": 3,
+          "price": 310.63,
+          "total": 931.89
+        },
+        {
+          "name": "Product 972",
+          "quantity": 2,
+          "price": 46.6,
+          "total": 93.2
+        },
+        {
+          "name": "Product 139",
+          "quantity": 2,
+          "price": 241.53,
+          "total": 483.06
+        },
+        {
+          "name": "Product 648",
+          "quantity": 1,
+          "price": 420.07,
+          "total": 420.07
+        },
+        {
+          "name": "Product 645",
+          "quantity": 3,
+          "price": 298.83,
+          "total": 896.49
+        }
+      ],
+      "subtotal": 3884.5699999999997,
+      "discount": 184.31,
+      "gst_amount": 444.03,
+      "total_amount": 4144.29,
+      "payment_method": "UPI",
+      "date": "2025-12-05T01:38:02.730762"
+    },
+    {
+      "id": "TXN_000076",
+      "bill_number": "PHM202512120076",
+      "customer_name": "Anjali Verma",
+      "customer_phone": "9843802720",
+      "items": [
+        {
+          "name": "Product 818",
+          "quantity": 3,
+          "price": 385.15,
+          "total": 1155.4499999999998
+        },
+        {
+          "name": "Product 610",
+          "quantity": 3,
+          "price": 458.2,
+          "total": 1374.6
+        },
+        {
+          "name": "Product 930",
+          "quantity": 3,
+          "price": 436.8,
+          "total": 1310.4
+        },
+        {
+          "name": "Product 8",
+          "quantity": 2,
+          "price": 203.39,
+          "total": 406.78
+        }
+      ],
+      "subtotal": 4247.23,
+      "discount": 252.62,
+      "gst_amount": 479.35,
+      "total_amount": 4473.96,
+      "payment_method": "CASH",
+      "date": "2025-11-30T01:38:02.730772"
+    },
+    {
+      "id": "TXN_000077",
+      "bill_number": "PHM202512120077",
+      "customer_name": "Sneha Sharma",
+      "customer_phone": "9876020327",
+      "items": [
+        {
+          "name": "Product 220",
+          "quantity": 1,
+          "price": 215.22,
+          "total": 215.22
+        },
+        {
+          "name": "Product 154",
+          "quantity": 2,
+          "price": 24.52,
+          "total": 49.04
+        },
+        {
+          "name": "Product 7",
+          "quantity": 3,
+          "price": 242.72,
+          "total": 728.16
+        },
+        {
+          "name": "Product 520",
+          "quantity": 2,
+          "price": 68.72,
+          "total": 137.44
+        },
+        {
+          "name": "Product 670",
+          "quantity": 2,
+          "price": 104.64,
+          "total": 209.28
+        },
+        {
+          "name": "Product 905",
+          "quantity": 3,
+          "price": 199.84,
+          "total": 599.52
+        }
+      ],
+      "subtotal": 1938.6599999999999,
+      "discount": 35.35,
+      "gst_amount": 228.4,
+      "total_amount": 2131.71,
+      "payment_method": "CASH",
+      "date": "2025-12-05T01:38:02.730785"
+    },
+    {
+      "id": "TXN_000078",
+      "bill_number": "PHM202512120078",
+      "customer_name": "Sneha Sharma",
+      "customer_phone": "9899601520",
+      "items": [
+        {
+          "name": "Product 490",
+          "quantity": 2,
+          "price": 66.15,
+          "total": 132.3
+        },
+        {
+          "name": "Product 150",
+          "quantity": 2,
+          "price": 349.99,
+          "total": 699.98
+        },
+        {
+          "name": "Product 917",
+          "quantity": 3,
+          "price": 496.46,
+          "total": 1489.3799999999999
+        },
+        {
+          "name": "Product 692",
+          "quantity": 1,
+          "price": 470.88,
+          "total": 470.88
+        },
+        {
+          "name": "Product 694",
+          "quantity": 1,
+          "price": 432.89,
+          "total": 432.89
+        },
+        {
+          "name": "Product 383",
+          "quantity": 2,
+          "price": 381.61,
+          "total": 763.22
+        }
+      ],
+      "subtotal": 3988.6499999999996,
+      "discount": 393.91,
+      "gst_amount": 431.37,
+      "total_amount": 4026.11,
+      "payment_method": "CASH",
+      "date": "2025-12-11T01:38:02.730800"
+    },
+    {
+      "id": "TXN_000079",
+      "bill_number": "PHM202512120079",
+      "customer_name": "Sneha Sharma",
+      "customer_phone": "9881211209",
+      "items": [
+        {
+          "name": "Product 754",
+          "quantity": 3,
+          "price": 19.02,
+          "total": 57.06
+        },
+        {
+          "name": "Product 762",
+          "quantity": 2,
+          "price": 93.39,
+          "total": 186.78
+        },
+        {
+          "name": "Product 294",
+          "quantity": 2,
+          "price": 179.61,
+          "total": 359.22
+        }
+      ],
+      "subtotal": 603.0600000000001,
+      "discount": 60.08,
+      "gst_amount": 65.16,
+      "total_amount": 608.14,
+      "payment_method": "CASH",
+      "date": "2025-12-05T01:38:02.730810"
+    },
+    {
+      "id": "TXN_000080",
+      "bill_number": "PHM202512120080",
+      "customer_name": "Meera Desai",
+      "customer_phone": "9854679492",
+      "items": [
+        {
+          "name": "Product 199",
+          "quantity": 2,
+          "price": 256.43,
+          "total": 512.86
+        },
+        {
+          "name": "Product 192",
+          "quantity": 2,
+          "price": 387.32,
+          "total": 774.64
+        },
+        {
+          "name": "Product 867",
+          "quantity": 2,
+          "price": 122.1,
+          "total": 244.2
+        },
+        {
+          "name": "Product 992",
+          "quantity": 1,
+          "price": 436.92,
+          "total": 436.92
+        },
+        {
+          "name": "Product 189",
+          "quantity": 3,
+          "price": 70.62,
+          "total": 211.86
+        },
+        {
+          "name": "Product 273",
+          "quantity": 2,
+          "price": 329.5,
+          "total": 659.0
+        }
+      ],
+      "subtotal": 2839.48,
+      "discount": 238.75,
+      "gst_amount": 312.09,
+      "total_amount": 2912.82,
+      "payment_method": "UPI",
+      "date": "2025-11-13T01:38:02.730823"
+    },
+    {
+      "id": "TXN_000081",
+      "bill_number": "PHM202512120081",
+      "customer_name": "Amit Patel",
+      "customer_phone": "9824218517",
+      "items": [
+        {
+          "name": "Product 671",
+          "quantity": 1,
+          "price": 303.39,
+          "total": 303.39
+        },
+        {
+          "name": "Product 549",
+          "quantity": 2,
+          "price": 28.64,
+          "total": 57.28
+        },
+        {
+          "name": "Product 195",
+          "quantity": 1,
+          "price": 88.46,
+          "total": 88.46
+        },
+        {
+          "name": "Product 481",
+          "quantity": 3,
+          "price": 115.7,
+          "total": 347.1
+        },
+        {
+          "name": "Product 302",
+          "quantity": 1,
+          "price": 261.26,
+          "total": 261.26
+        },
+        {
+          "name": "Product 154",
+          "quantity": 3,
+          "price": 104.79,
+          "total": 314.37
+        }
+      ],
+      "subtotal": 1371.8600000000001,
+      "discount": 30.63,
+      "gst_amount": 160.95,
+      "total_amount": 1502.18,
+      "payment_method": "UPI",
+      "date": "2025-12-02T01:38:02.730838"
+    },
+    {
+      "id": "TXN_000082",
+      "bill_number": "PHM202512120082",
+      "customer_name": "Anjali Verma",
+      "customer_phone": "9812331406",
+      "items": [
+        {
+          "name": "Product 838",
+          "quantity": 3,
+          "price": 108.75,
+          "total": 326.25
+        },
+        {
+          "name": "Product 32",
+          "quantity": 3,
+          "price": 141.38,
+          "total": 424.14
+        },
+        {
+          "name": "Product 535",
+          "quantity": 1,
+          "price": 262.23,
+          "total": 262.23
+        },
+        {
+          "name": "Product 929",
+          "quantity": 1,
+          "price": 445.0,
+          "total": 445.0
+        },
+        {
+          "name": "Product 870",
+          "quantity": 3,
+          "price": 324.44,
+          "total": 973.3199999999999
+        }
+      ],
+      "subtotal": 2430.9399999999996,
+      "discount": 183.84,
+      "gst_amount": 269.65,
+      "total_amount": 2516.75,
+      "payment_method": "UPI",
+      "date": "2025-11-19T01:38:02.730850"
+    },
+    {
+      "id": "TXN_000083",
+      "bill_number": "PHM202512120083",
+      "customer_name": "Rohan Joshi",
+      "customer_phone": "9855377169",
+      "items": [
+        {
+          "name": "Product 63",
+          "quantity": 3,
+          "price": 361.94,
+          "total": 1085.82
+        },
+        {
+          "name": "Product 111",
+          "quantity": 2,
+          "price": 150.65,
+          "total": 301.3
+        },
+        {
+          "name": "Product 211",
+          "quantity": 2,
+          "price": 458.49,
+          "total": 916.98
+        },
+        {
+          "name": "Product 575",
+          "quantity": 1,
+          "price": 239.04,
+          "total": 239.04
+        },
+        {
+          "name": "Product 105",
+          "quantity": 1,
+          "price": 206.08,
+          "total": 206.08
+        },
+        {
+          "name": "Product 250",
+          "quantity": 3,
+          "price": 312.42,
+          "total": 937.26
+        },
+        {
+          "name": "Product 345",
+          "quantity": 2,
+          "price": 133.36,
+          "total": 266.72
+        },
+        {
+          "name": "Product 648",
+          "quantity": 2,
+          "price": 431.9,
+          "total": 863.8
+        }
+      ],
+      "subtotal": 4817.0,
+      "discount": 161.3,
+      "gst_amount": 558.68,
+      "total_amount": 5214.38,
+      "payment_method": "CASH",
+      "date": "2025-11-22T01:38:02.730866"
+    },
+    {
+      "id": "TXN_000084",
+      "bill_number": "PHM202512120084",
+      "customer_name": "Suresh Gupta",
+      "customer_phone": "9824724993",
+      "items": [
+        {
+          "name": "Product 699",
+          "quantity": 3,
+          "price": 370.78,
+          "total": 1112.34
+        },
+        {
+          "name": "Product 481",
+          "quantity": 3,
+          "price": 155.22,
+          "total": 465.65999999999997
+        },
+        {
+          "name": "Product 335",
+          "quantity": 1,
+          "price": 401.87,
+          "total": 401.87
+        },
+        {
+          "name": "Product 572",
+          "quantity": 1,
+          "price": 179.19,
+          "total": 179.19
+        },
+        {
+          "name": "Product 317",
+          "quantity": 1,
+          "price": 411.01,
+          "total": 411.01
+        },
+        {
+          "name": "Product 642",
+          "quantity": 3,
+          "price": 107.58,
+          "total": 322.74
+        },
+        {
+          "name": "Product 773",
+          "quantity": 3,
+          "price": 179.82,
+          "total": 539.46
+        },
+        {
+          "name": "Product 240",
+          "quantity": 3,
+          "price": 327.02,
+          "total": 981.06
+        }
+      ],
+      "subtotal": 4413.33,
+      "discount": 382.26,
+      "gst_amount": 483.73,
+      "total_amount": 4514.8,
+      "payment_method": "CASH",
+      "date": "2025-12-06T01:38:02.730881"
+    },
+    {
+      "id": "TXN_000085",
+      "bill_number": "PHM202512120085",
+      "customer_name": "Rohan Joshi",
+      "customer_phone": "9844148010",
+      "items": [
+        {
+          "name": "Product 667",
+          "quantity": 1,
+          "price": 362.83,
+          "total": 362.83
+        },
+        {
+          "name": "Product 97",
+          "quantity": 3,
+          "price": 406.35,
+          "total": 1219.0500000000002
+        },
+        {
+          "name": "Product 904",
+          "quantity": 2,
+          "price": 37.69,
+          "total": 75.38
+        },
+        {
+          "name": "Product 190",
+          "quantity": 2,
+          "price": 333.36,
+          "total": 666.72
+        },
+        {
+          "name": "Product 379",
+          "quantity": 2,
+          "price": 359.86,
+          "total": 719.72
+        },
+        {
+          "name": "Product 596",
+          "quantity": 2,
+          "price": 149.21,
+          "total": 298.42
+        },
+        {
+          "name": "Product 814",
+          "quantity": 3,
+          "price": 448.63,
+          "total": 1345.8899999999999
+        }
+      ],
+      "subtotal": 4688.01,
+      "discount": 234.27,
+      "gst_amount": 534.45,
+      "total_amount": 4988.19,
+      "payment_method": "CASH",
+      "date": "2025-11-18T01:38:02.730895"
+    },
+    {
+      "id": "TXN_000086",
+      "bill_number": "PHM202512120086",
+      "customer_name": "Priya Singh",
+      "customer_phone": "9885142184",
+      "items": [
+        {
+          "name": "Product 130",
+          "quantity": 1,
+          "price": 494.37,
+          "total": 494.37
+        },
+        {
+          "name": "Product 789",
+          "quantity": 1,
+          "price": 165.0,
+          "total": 165.0
+        },
+        {
+          "name": "Product 838",
+          "quantity": 3,
+          "price": 170.12,
+          "total": 510.36
+        },
+        {
+          "name": "Product 374",
+          "quantity": 3,
+          "price": 362.51,
+          "total": 1087.53
+        },
+        {
+          "name": "Product 340",
+          "quantity": 3,
+          "price": 290.55,
+          "total": 871.6500000000001
+        }
+      ],
+      "subtotal": 3128.9100000000003,
+      "discount": 168.22,
+      "gst_amount": 355.28,
+      "total_amount": 3315.97,
+      "payment_method": "UPI",
+      "date": "2025-11-29T01:38:02.730907"
+    },
+    {
+      "id": "TXN_000087",
+      "bill_number": "PHM202512120087",
+      "customer_name": "Vikram Reddy",
+      "customer_phone": "9856440920",
+      "items": [
+        {
+          "name": "Product 764",
+          "quantity": 1,
+          "price": 208.84,
+          "total": 208.84
+        },
+        {
+          "name": "Product 291",
+          "quantity": 3,
+          "price": 425.93,
+          "total": 1277.79
+        },
+        {
+          "name": "Product 178",
+          "quantity": 3,
+          "price": 93.78,
+          "total": 281.34000000000003
+        },
+        {
+          "name": "Product 750",
+          "quantity": 2,
+          "price": 269.43,
+          "total": 538.86
+        },
+        {
+          "name": "Product 300",
+          "quantity": 2,
+          "price": 307.12,
+          "total": 614.24
+        },
+        {
+          "name": "Product 167",
+          "quantity": 1,
+          "price": 296.77,
+          "total": 296.77
+        },
+        {
+          "name": "Product 933",
+          "quantity": 3,
+          "price": 405.47,
+          "total": 1216.41
+        }
+      ],
+      "subtotal": 4434.25,
+      "discount": 355.92,
+      "gst_amount": 489.4,
+      "total_amount": 4567.73,
+      "payment_method": "UPI",
+      "date": "2025-11-13T01:38:02.730921"
+    },
+    {
+      "id": "TXN_000088",
+      "bill_number": "PHM202512120088",
+      "customer_name": "Anjali Verma",
+      "customer_phone": "9861674480",
+      "items": [
+        {
+          "name": "Product 808",
+          "quantity": 3,
+          "price": 95.92,
+          "total": 287.76
+        },
+        {
+          "name": "Product 439",
+          "quantity": 3,
+          "price": 43.05,
+          "total": 129.14999999999998
+        },
+        {
+          "name": "Product 374",
+          "quantity": 3,
+          "price": 309.04,
+          "total": 927.1200000000001
+        },
+        {
+          "name": "Product 310",
+          "quantity": 1,
+          "price": 118.98,
+          "total": 118.98
+        },
+        {
+          "name": "Product 589",
+          "quantity": 2,
+          "price": 220.02,
+          "total": 440.04
+        },
+        {
+          "name": "Product 864",
+          "quantity": 2,
+          "price": 295.43,
+          "total": 590.86
+        },
+        {
+          "name": "Product 976",
+          "quantity": 2,
+          "price": 74.32,
+          "total": 148.64
+        }
+      ],
+      "subtotal": 2642.55,
+      "discount": 62.99,
+      "gst_amount": 309.55,
+      "total_amount": 2889.11,
+      "payment_method": "CASH",
+      "date": "2025-12-07T01:38:02.730938"
+    },
+    {
+      "id": "TXN_000089",
+      "bill_number": "PHM202512120089",
+      "customer_name": "Rohan Joshi",
+      "customer_phone": "9899707347",
+      "items": [
+        {
+          "name": "Product 62",
+          "quantity": 2,
+          "price": 474.48,
+          "total": 948.96
+        },
+        {
+          "name": "Product 871",
+          "quantity": 1,
+          "price": 456.57,
+          "total": 456.57
+        },
+        {
+          "name": "Product 404",
+          "quantity": 1,
+          "price": 366.74,
+          "total": 366.74
+        },
+        {
+          "name": "Product 767",
+          "quantity": 3,
+          "price": 38.27,
+          "total": 114.81
+        },
+        {
+          "name": "Product 360",
+          "quantity": 1,
+          "price": 309.74,
+          "total": 309.74
+        },
+        {
+          "name": "Product 685",
+          "quantity": 3,
+          "price": 232.33,
+          "total": 696.99
+        },
+        {
+          "name": "Product 389",
+          "quantity": 3,
+          "price": 126.48,
+          "total": 379.44
+        },
+        {
+          "name": "Product 602",
+          "quantity": 3,
+          "price": 55.7,
+          "total": 167.10000000000002
+        }
+      ],
+      "subtotal": 3440.3499999999995,
+      "discount": 207.93,
+      "gst_amount": 387.89,
+      "total_amount": 3620.31,
+      "payment_method": "CASH",
+      "date": "2025-11-18T01:38:02.730954"
+    },
+    {
+      "id": "TXN_000090",
+      "bill_number": "PHM202512120090",
+      "customer_name": "Suresh Gupta",
+      "customer_phone": "9868457569",
+      "items": [
+        {
+          "name": "Product 900",
+          "quantity": 2,
+          "price": 213.77,
+          "total": 427.54
+        },
+        {
+          "name": "Product 949",
+          "quantity": 3,
+          "price": 261.03,
+          "total": 783.0899999999999
+        },
+        {
+          "name": "Product 560",
+          "quantity": 1,
+          "price": 458.91,
+          "total": 458.91
+        },
+        {
+          "name": "Product 224",
+          "quantity": 2,
+          "price": 158.72,
+          "total": 317.44
+        },
+        {
+          "name": "Product 937",
+          "quantity": 1,
+          "price": 454.03,
+          "total": 454.03
+        },
+        {
+          "name": "Product 763",
+          "quantity": 1,
+          "price": 167.01,
+          "total": 167.01
+        },
+        {
+          "name": "Product 791",
+          "quantity": 2,
+          "price": 405.86,
+          "total": 811.72
+        }
+      ],
+      "subtotal": 3419.7400000000007,
+      "discount": 238.45,
+      "gst_amount": 381.75,
+      "total_amount": 3563.04,
+      "payment_method": "CASH",
+      "date": "2025-11-22T01:38:02.730968"
+    },
+    {
+      "id": "TXN_000091",
+      "bill_number": "PHM202512120091",
+      "customer_name": "Rohan Joshi",
+      "customer_phone": "9817527338",
+      "items": [
+        {
+          "name": "Product 34",
+          "quantity": 1,
+          "price": 210.24,
+          "total": 210.24
+        },
+        {
+          "name": "Product 942",
+          "quantity": 2,
+          "price": 421.26,
+          "total": 842.52
+        },
+        {
+          "name": "Product 186",
+          "quantity": 1,
+          "price": 363.33,
+          "total": 363.33
+        },
+        {
+          "name": "Product 689",
+          "quantity": 2,
+          "price": 118.35,
+          "total": 236.7
+        },
+        {
+          "name": "Product 441",
+          "quantity": 3,
+          "price": 28.75,
+          "total": 86.25
+        }
+      ],
+      "subtotal": 1739.04,
+      "discount": 69.33,
+      "gst_amount": 200.37,
+      "total_amount": 1870.08,
+      "payment_method": "CASH",
+      "date": "2025-11-24T01:38:02.730980"
+    },
+    {
+      "id": "TXN_000092",
+      "bill_number": "PHM202512120092",
+      "customer_name": "Kavita Nair",
+      "customer_phone": "9819511894",
+      "items": [
+        {
+          "name": "Product 621",
+          "quantity": 2,
+          "price": 61.51,
+          "total": 123.02
+        },
+        {
+          "name": "Product 780",
+          "quantity": 2,
+          "price": 97.71,
+          "total": 195.42
+        }
+      ],
+      "subtotal": 318.44,
+      "discount": 13.85,
+      "gst_amount": 36.55,
+      "total_amount": 341.14,
+      "payment_method": "CASH",
+      "date": "2025-12-08T01:38:02.730989"
+    },
+    {
+      "id": "TXN_000093",
+      "bill_number": "PHM202512120093",
+      "customer_name": "Vikram Reddy",
+      "customer_phone": "9825215984",
+      "items": [
+        {
+          "name": "Product 105",
+          "quantity": 2,
+          "price": 156.65,
+          "total": 313.3
+        },
+        {
+          "name": "Product 429",
+          "quantity": 1,
+          "price": 481.34,
+          "total": 481.34
+        },
+        {
+          "name": "Product 992",
+          "quantity": 3,
+          "price": 94.68,
+          "total": 284.04
+        },
+        {
+          "name": "Product 815",
+          "quantity": 3,
+          "price": 243.06,
+          "total": 729.1800000000001
+        },
+        {
+          "name": "Product 686",
+          "quantity": 1,
+          "price": 282.8,
+          "total": 282.8
+        }
+      ],
+      "subtotal": 2090.6600000000003,
+      "discount": 170.75,
+      "gst_amount": 230.39,
+      "total_amount": 2150.3,
+      "payment_method": "UPI",
+      "date": "2025-11-26T01:38:02.731001"
+    },
+    {
+      "id": "TXN_000094",
+      "bill_number": "PHM202512120094",
+      "customer_name": "Kavita Nair",
+      "customer_phone": "9849099220",
+      "items": [
+        {
+          "name": "Product 851",
+          "quantity": 1,
+          "price": 267.96,
+          "total": 267.96
+        },
+        {
+          "name": "Product 704",
+          "quantity": 1,
+          "price": 197.83,
+          "total": 197.83
+        },
+        {
+          "name": "Product 5",
+          "quantity": 2,
+          "price": 362.36,
+          "total": 724.72
+        },
+        {
+          "name": "Product 459",
+          "quantity": 1,
+          "price": 178.99,
+          "total": 178.99
+        },
+        {
+          "name": "Product 198",
+          "quantity": 1,
+          "price": 59.32,
+          "total": 59.32
+        },
+        {
+          "name": "Product 702",
+          "quantity": 2,
+          "price": 40.52,
+          "total": 81.04
+        },
+        {
+          "name": "Product 592",
+          "quantity": 2,
+          "price": 328.64,
+          "total": 657.28
+        },
+        {
+          "name": "Product 324",
+          "quantity": 2,
+          "price": 41.71,
+          "total": 83.42
+        }
+      ],
+      "subtotal": 2250.56,
+      "discount": 172.28,
+      "gst_amount": 249.39,
+      "total_amount": 2327.67,
+      "payment_method": "CASH",
+      "date": "2025-11-24T01:38:02.731017"
+    },
+    {
+      "id": "TXN_000095",
+      "bill_number": "PHM202512120095",
+      "customer_name": "Meera Desai",
+      "customer_phone": "9864975433",
+      "items": [
+        {
+          "name": "Product 161",
+          "quantity": 1,
+          "price": 160.13,
+          "total": 160.13
+        },
+        {
+          "name": "Product 998",
+          "quantity": 2,
+          "price": 337.44,
+          "total": 674.88
+        },
+        {
+          "name": "Product 495",
+          "quantity": 3,
+          "price": 208.85,
+          "total": 626.55
+        },
+        {
+          "name": "Product 535",
+          "quantity": 3,
+          "price": 457.05,
+          "total": 1371.15
+        },
+        {
+          "name": "Product 705",
+          "quantity": 2,
+          "price": 376.24,
+          "total": 752.48
+        }
+      ],
+      "subtotal": 3585.19,
+      "discount": 60.28,
+      "gst_amount": 422.99,
+      "total_amount": 3947.9,
+      "payment_method": "CASH",
+      "date": "2025-11-29T01:38:02.731030"
+    },
+    {
+      "id": "TXN_000096",
+      "bill_number": "PHM202512120096",
+      "customer_name": "Rajesh Kumar",
+      "customer_phone": "9841462968",
+      "items": [
+        {
+          "name": "Product 154",
+          "quantity": 3,
+          "price": 265.07,
+          "total": 795.21
+        },
+        {
+          "name": "Product 777",
+          "quantity": 2,
+          "price": 87.11,
+          "total": 174.22
+        },
+        {
+          "name": "Product 271",
+          "quantity": 2,
+          "price": 360.39,
+          "total": 720.78
+        },
+        {
+          "name": "Product 304",
+          "quantity": 1,
+          "price": 156.07,
+          "total": 156.07
+        }
+      ],
+      "subtotal": 1846.28,
+      "discount": 60.3,
+      "gst_amount": 214.32,
+      "total_amount": 2000.3,
+      "payment_method": "CASH",
+      "date": "2025-12-07T01:38:02.731041"
+    },
+    {
+      "id": "TXN_000097",
+      "bill_number": "PHM202512120097",
+      "customer_name": "Sneha Sharma",
+      "customer_phone": "9814397292",
+      "items": [
+        {
+          "name": "Product 800",
+          "quantity": 1,
+          "price": 428.61,
+          "total": 428.61
+        },
+        {
+          "name": "Product 638",
+          "quantity": 2,
+          "price": 131.69,
+          "total": 263.38
+        },
+        {
+          "name": "Product 842",
+          "quantity": 3,
+          "price": 430.54,
+          "total": 1291.6200000000001
+        },
+        {
+          "name": "Product 562",
+          "quantity": 2,
+          "price": 254.87,
+          "total": 509.74
+        },
+        {
+          "name": "Product 906",
+          "quantity": 1,
+          "price": 90.97,
+          "total": 90.97
+        },
+        {
+          "name": "Product 459",
+          "quantity": 2,
+          "price": 224.61,
+          "total": 449.22
+        }
+      ],
+      "subtotal": 3033.54,
+      "discount": 22.53,
+      "gst_amount": 361.32,
+      "total_amount": 3372.33,
+      "payment_method": "CASH",
+      "date": "2025-11-24T01:38:02.731055"
+    },
+    {
+      "id": "TXN_000098",
+      "bill_number": "PHM202512120098",
+      "customer_name": "Meera Desai",
+      "customer_phone": "9811846779",
+      "items": [
+        {
+          "name": "Product 977",
+          "quantity": 3,
+          "price": 365.66,
+          "total": 1096.98
+        },
+        {
+          "name": "Product 664",
+          "quantity": 1,
+          "price": 86.07,
+          "total": 86.07
+        },
+        {
+          "name": "Product 887",
+          "quantity": 1,
+          "price": 41.42,
+          "total": 41.42
+        }
+      ],
+      "subtotal": 1224.47,
+      "discount": 34.77,
+      "gst_amount": 142.76,
+      "total_amount": 1332.46,
+      "payment_method": "UPI",
+      "date": "2025-11-17T01:38:02.731065"
+    },
+    {
+      "id": "TXN_000099",
+      "bill_number": "PHM202512120099",
+      "customer_name": "Anjali Verma",
+      "customer_phone": "9872726468",
+      "items": [
+        {
+          "name": "Product 6",
+          "quantity": 2,
+          "price": 86.49,
+          "total": 172.98
+        },
+        {
+          "name": "Product 374",
+          "quantity": 3,
+          "price": 288.11,
+          "total": 864.33
+        },
+        {
+          "name": "Product 661",
+          "quantity": 3,
+          "price": 138.95,
+          "total": 416.84999999999997
+        },
+        {
+          "name": "Product 726",
+          "quantity": 3,
+          "price": 110.21,
+          "total": 330.63
+        }
+      ],
+      "subtotal": 1784.79,
+      "discount": 87.79,
+      "gst_amount": 203.64,
+      "total_amount": 1900.64,
+      "payment_method": "UPI",
+      "date": "2025-11-24T01:38:02.731075"
+    },
+    {
+      "id": "TXN_000100",
+      "bill_number": "PHM202512120100",
+      "customer_name": "Meera Desai",
+      "customer_phone": "9837787141",
+      "items": [
+        {
+          "name": "Product 716",
+          "quantity": 2,
+          "price": 472.13,
+          "total": 944.26
+        },
+        {
+          "name": "Product 43",
+          "quantity": 1,
+          "price": 131.09,
+          "total": 131.09
+        }
+      ],
+      "subtotal": 1075.35,
+      "discount": 81.34,
+      "gst_amount": 119.28,
+      "total_amount": 1113.29,
+      "payment_method": "CASH",
+      "date": "2025-12-06T01:38:02.731084"
+    }
+  ]
+}

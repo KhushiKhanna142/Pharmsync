@@ -1,61 +1,45 @@
 import { AlertTriangle, TrendingUp, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
 interface ReorderItem {
-  id: string;
-  name: string;
-  currentStock: number;
-  predictedDemand: number;
-  deficit: number;
-  urgency: "high" | "medium" | "low";
+  med_name: string;
+  current_stock: number;
+  avg_daily_demand: number;
+  target_stock: number;
+  status: string;
+  reorder_qty: number;
+  outbreak_tag?: string;
 }
 
-const mockReorders: ReorderItem[] = [
-  {
-    id: "1",
-    name: "Amoxicillin 500mg",
-    currentStock: 120,
-    predictedDemand: 350,
-    deficit: 230,
-    urgency: "high",
-  },
-  {
-    id: "2",
-    name: "Lisinopril 10mg",
-    currentStock: 85,
-    predictedDemand: 200,
-    deficit: 115,
-    urgency: "high",
-  },
-  {
-    id: "3",
-    name: "Metformin 850mg",
-    currentStock: 200,
-    predictedDemand: 280,
-    deficit: 80,
-    urgency: "medium",
-  },
-  {
-    id: "4",
-    name: "Omeprazole 20mg",
-    currentStock: 150,
-    predictedDemand: 190,
-    deficit: 40,
-    urgency: "low",
-  },
-];
-
 export function ReorderAlerts() {
-  const getUrgencyStyles = (urgency: ReorderItem["urgency"]) => {
-    switch (urgency) {
-      case "high":
-        return "bg-destructive/10 text-destructive border-destructive/30";
-      case "medium":
-        return "bg-warning/10 text-warning border-warning/30";
-      case "low":
-        return "bg-secondary text-secondary-foreground border-secondary";
+  const [reorders, setReorders] = useState<ReorderItem[]>([]);
+
+  useEffect(() => {
+    async function fetchReorders() {
+      try {
+        const response = await fetch("http://localhost:8000/reorder");
+        if (response.ok) {
+          const data = await response.json();
+          // Filter only items that need reorder
+          const activeReorders = data.filter((item: ReorderItem) => item.reorder_qty > 0).slice(0, 4);
+          setReorders(activeReorders);
+        }
+      } catch (error) {
+        console.error("Failed to fetch reorders:", error);
+      }
     }
+    fetchReorders();
+  }, []);
+
+  const getUrgencyStyles = (deficit: number) => {
+    // Simple heuristic: Higher deficit = Higher urgency
+    if (deficit > 200) return "bg-destructive/10 text-destructive border-destructive/30";
+    if (deficit > 50) return "bg-warning/10 text-warning border-warning/30";
+    return "bg-secondary text-secondary-foreground border-secondary";
   };
+
+  const isHighUrgency = (deficit: number) => deficit > 200;
 
   return (
     <div className="rounded-xl border border-border bg-card p-6 shadow-card animate-slide-up">
@@ -74,39 +58,48 @@ export function ReorderAlerts() {
       </div>
 
       <div className="space-y-3">
-        {mockReorders.map((item) => (
-          <div
-            key={item.id}
-            className="flex items-center justify-between rounded-lg border border-border bg-muted/30 p-4 transition-all hover:bg-muted/50"
-          >
-            <div className="flex items-center gap-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary">
-                <Package className="h-5 w-5 text-secondary-foreground" />
-              </div>
-              <div>
-                <p className="font-medium text-foreground">{item.name}</p>
-                <p className="text-sm text-muted-foreground">
-                  Stock: {item.currentStock} | Demand: {item.predictedDemand}
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <span
-                className={`rounded-full border px-3 py-1 text-xs font-medium ${getUrgencyStyles(
-                  item.urgency
-                )}`}
-              >
-                {item.urgency === "high" && (
-                  <AlertTriangle className="mr-1 inline h-3 w-3" />
-                )}
-                -{item.deficit} units
-              </span>
-              <Button size="sm" variant="outline">
-                Reorder
-              </Button>
-            </div>
+        {reorders.length === 0 ? (
+          <div className="text-center py-8 text-muted-foreground">
+            All stock levels are optimal. No reorders needed.
           </div>
-        ))}
+        ) : (
+          reorders.map((item) => (
+            <div
+              key={item.med_name}
+              className="flex items-center justify-between rounded-lg border border-border bg-muted/30 p-4 transition-all hover:bg-muted/50"
+            >
+              <div className="flex items-center gap-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary">
+                  <Package className="h-5 w-5 text-secondary-foreground" />
+                </div>
+                <div>
+                  <p className="font-medium text-foreground">{item.med_name}</p>
+                  <p className="text-sm text-muted-foreground">
+                    Stock: {item.current_stock} | Target: {item.target_stock}
+                    {item.outbreak_tag && (
+                      <span className="ml-2 text-xs text-blue-600 font-semibold">(Outbreak Demand)</span>
+                    )}
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <span
+                  className={`rounded-full border px-3 py-1 text-xs font-medium ${getUrgencyStyles(
+                    item.reorder_qty
+                  )}`}
+                >
+                  {isHighUrgency(item.reorder_qty) && (
+                    <AlertTriangle className="mr-1 inline h-3 w-3" />
+                  )}
+                  -{item.reorder_qty} units
+                </span>
+                <Button size="sm" variant="outline">
+                  Reorder
+                </Button>
+              </div>
+            </div>
+          ))
+        )}
       </div>
     </div>
   );

@@ -1,30 +1,28 @@
 from sqlalchemy import text
 from db_direct import engine
 
-print("Adding missing columns to inventory...")
-try:
-    with engine.connect() as conn:
-        with conn.begin():
-            # Add cost_price
-            print("Adding cost_price...")
-            try:
-                conn.execute(text("ALTER TABLE inventory ADD COLUMN cost_price DOUBLE PRECISION DEFAULT 0.0"))
-            except Exception as e:
-                print(f"Error adding cost_price (maybe exists?): {e}")
+def add_columns():
+    if not engine:
+        print("❌ Database engine not available.")
+        return
 
-            # Add mfg_date
-            print("Adding mfg_date...")
-            try:
-                 conn.execute(text("ALTER TABLE inventory ADD COLUMN mfg_date TIMESTAMP"))
-            except Exception as e:
-                print(f"Error adding mfg_date (maybe exists?): {e}")
-                
-    print("Done.")
+    print("--- Adding Missing Columns to 'drugs' table ---")
     
-    # Verify Schema
-    with engine.connect() as conn:
-        res = conn.execute(text("SELECT column_name FROM information_schema.columns WHERE table_name = 'inventory'"))
-        print(f"Current Columns: {[c['column_name'] for c in res.mappings()]}")
+    commands = [
+        "ALTER TABLE drugs ADD COLUMN IF NOT EXISTS manufacturer TEXT;",
+        "ALTER TABLE drugs ADD COLUMN IF NOT EXISTS dosage_form TEXT;",
+        "ALTER TABLE drugs ADD COLUMN IF NOT EXISTS primary_ingredient TEXT;"
+    ]
 
-except Exception as e:
-    print(f"Fatal Error: {e}")
+    try:
+        with engine.connect() as conn:
+            with conn.begin():
+                for cmd in commands:
+                    print(f"Executing: {cmd}")
+                    conn.execute(text(cmd))
+        print("✅ Columns added successfully.")
+    except Exception as e:
+        print(f"❌ Error adding columns: {e}")
+
+if __name__ == "__main__":
+    add_columns()

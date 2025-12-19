@@ -2,8 +2,43 @@ import { Package, AlertTriangle, Clock, ShoppingCart } from "lucide-react";
 import { KPICard } from "@/components/features/KPICard";
 import { DemandChart } from "@/components/features/DemandChart";
 import { ReorderAlerts } from "@/components/features/ReorderAlerts";
+import { useEffect, useState } from "react";
 
 export default function Dashboard() {
+  const [stats, setStats] = useState({
+    totalProducts: "...",
+    lowStock: "...",
+    expiring: "...",
+    reorders: "..."
+  });
+
+  useEffect(() => {
+    async function fetchStats() {
+      try {
+        const response = await fetch("http://localhost:8000/stats");
+        if (response.ok) {
+          const data = await response.json();
+          setStats({
+            totalProducts: data.total_products?.toLocaleString() || "0",
+            lowStock: data.low_stock?.toLocaleString() || "0",
+            expiring: data.expiring_soon?.toLocaleString() || "0",
+            reorders: data.reorders?.toLocaleString() || "0"
+          });
+        }
+      } catch (e) {
+        console.error("Dashboard fetch error:", e);
+        setStats({
+          totalProducts: "0",
+          lowStock: "0",
+          expiring: "0",
+          reorders: "0"
+        });
+      }
+    }
+
+    fetchStats();
+  }, []);
+
   return (
     <div className="space-y-8 pt-12 md:pt-0">
       {/* Header */}
@@ -18,29 +53,29 @@ export default function Dashboard() {
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <KPICard
           title="Total Products"
-          value="2,847"
+          value={stats.totalProducts}
           subtitle="Active SKUs"
           icon={Package}
           trend={{ value: 12, isPositive: true }}
         />
         <KPICard
           title="Low Stock Alerts"
-          value="23"
+          value={stats.lowStock}
           subtitle="Items below threshold"
           icon={AlertTriangle}
           variant="danger"
         />
         <KPICard
           title="Expiring Soon"
-          value="47"
+          value={stats.expiring}
           subtitle="Within 30 days"
           icon={Clock}
           variant="warning"
         />
         <KPICard
           title="Pending Reorders"
-          value="12"
-          subtitle="Awaiting approval"
+          value={stats.reorders}
+          subtitle="Out of Stock Items"
           icon={ShoppingCart}
           trend={{ value: 8, isPositive: false }}
         />

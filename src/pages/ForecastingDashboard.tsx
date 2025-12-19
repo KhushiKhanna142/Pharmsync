@@ -79,25 +79,15 @@ export default function ForecastingDashboard() {
     const [selectedDrug, setSelectedDrug] = useState<string>("");
     const [detailedData, setDetailedData] = useState<any[]>([]);
 
-    // Module 6 State
-    const [wasteAnalytics, setWasteAnalytics] = useState<WasteAnalytics>({ batch_health: [], projected_loss: 0, waste_reasons: [] });
-    const [pricingStrategies, setPricingStrategies] = useState<PricingStrategy[]>([]);
-    const [pricingDrug, setPricingDrug] = useState<string>("Dolo 650"); // Default for pricing tool
-
     useEffect(() => {
         const fetchData = async () => {
             try {
                 // Fetch All Overview Data
-                const [forecastRes, wasteRes] = await Promise.all([
-                    fetch("http://localhost:8000/forecast"),
-                    fetch("http://localhost:8000/waste/analytics")
-                ]);
+                const forecastRes = await fetch("http://localhost:8000/forecast");
 
                 if (!forecastRes.ok) throw new Error("Failed to fetch forecast data");
-                if (!wasteRes.ok) throw new Error("Failed to fetch waste analytics");
 
                 const forecastData = await forecastRes.json();
-                const wasteData = await wasteRes.json();
 
                 if (forecastData.length > 0) {
                     const keys = Object.keys(forecastData[0]).filter(k => k !== 'date' && k !== 'predicted_sales' && k !== 'is_holiday');
@@ -115,7 +105,6 @@ export default function ForecastingDashboard() {
                 });
 
                 setForecast(formattedForecast);
-                setWasteAnalytics(wasteData);
 
             } catch (error) {
                 console.error("Error loading overview:", error);
@@ -149,22 +138,6 @@ export default function ForecastingDashboard() {
         };
         fetchDetail();
     }, [selectedDrug]);
-
-    // Fetch Pricing Strategies
-    useEffect(() => {
-        // Auto-fetch pricing strategies for the selected pricing drug
-        const fetchPricing = async () => {
-            try {
-                // Mock params for demo: current price $100, 30 days left
-                const res = await fetch(`http://localhost:8000/revenue/recovery?med_name=${pricingDrug}&current_price=100&days_left=30`);
-                if (res.ok) {
-                    const data = await res.json();
-                    setPricingStrategies(data);
-                }
-            } catch (e) { console.error(e); }
-        };
-        fetchPricing();
-    }, [pricingDrug]);
 
     if (loading) {
         return <div className="p-8 text-center text-muted-foreground">Loading forecasting intelligence...</div>;
@@ -253,131 +226,6 @@ export default function ForecastingDashboard() {
                             </div>
                         </CardContent>
                     </Card>
-                </div>
-            </div>
-
-            {/* --- SECTION 2: WASTE & REVENUE RECOVERY --- */}
-            <div className="space-y-4 pt-6 border-t border-slate-200">
-                <div className="flex items-center justify-between">
-                    <h2 className="text-xl font-semibold text-slate-800">2. Waste & Revenue Recovery</h2>
-                    <Badge variant="outline" className="text-green-600 border-green-200 bg-green-50">
-                        Projected Loss: ${wasteAnalytics.projected_loss.toLocaleString()}
-                    </Badge>
-                </div>
-
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-
-                    {/* Expiry Heatmap / Monitor */}
-                    <Card className="col-span-full lg:col-span-1 border-slate-200 shadow-sm bg-white">
-                        <CardHeader>
-                            <CardTitle className="text-base font-medium flex items-center gap-2">
-                                <AlertCircle className="h-4 w-4 text-amber-500" />
-                                Expiry Risk Monitor
-                            </CardTitle>
-                            <CardDescription>Batches entering Critical Zone (&lt;90 days)</CardDescription>
-                        </CardHeader>
-                        <CardContent className="p-0">
-                            <ScrollArea className="h-[300px]">
-                                {wasteAnalytics.batch_health.map((batch, idx) => (
-                                    <div key={idx} className="p-3 border-b last:border-0 flex justify-between items-center text-sm hover:bg-slate-50">
-                                        <div>
-                                            <div className="font-medium text-slate-800">{batch.med_name}</div>
-                                            <div className="text-xs text-slate-500">{batch.id}</div>
-                                        </div>
-                                        <div className="text-right">
-                                            <div className={`font-bold ${batch.days_left < 90 ? 'text-red-600' : 'text-amber-600'}`}>
-                                                {batch.days_left} Days
-                                            </div>
-                                            <div className="text-xs text-slate-500">Qty: {batch.Qty_On_Hand}</div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </ScrollArea>
-                        </CardContent>
-                    </Card>
-
-                    {/* Waste Reasons Analytics */}
-                    <Card className="col-span-full lg:col-span-1 border-slate-200 shadow-sm bg-white">
-                        <CardHeader>
-                            <CardTitle className="text-base font-medium flex items-center gap-2">
-                                <PackageMinus className="h-4 w-4 text-red-500" />
-                                Waste Analysis
-                            </CardTitle>
-                            <CardDescription>Historical waste by reason (Last 6 Months)</CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                            <div className="h-[300px] w-full">
-                                <ResponsiveContainer width="100%" height="100%">
-                                    <BarChart data={wasteAnalytics.waste_reasons}>
-                                        <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                                        <XAxis dataKey="waste_reason" fontSize={11} />
-                                        <YAxis fontSize={12} />
-                                        <Tooltip cursor={{ fill: 'transparent' }} />
-                                        <Bar dataKey="total_loss" name="Loss ($)" radius={[4, 4, 0, 0]}>
-                                            {wasteAnalytics.waste_reasons.map((entry, index) => (
-                                                <Cell key={`cell-${index}`} fill={WASTE_COLORS[index % WASTE_COLORS.length]} />
-                                            ))}
-                                        </Bar>
-                                    </BarChart>
-                                </ResponsiveContainer>
-                            </div>
-                        </CardContent>
-                    </Card>
-
-                    {/* Dynamic Pricing Engine */}
-                    <Card className="col-span-full lg:col-span-1 border-slate-200 shadow-sm bg-white ring-1 ring-blue-100">
-                        <CardHeader className="bg-blue-50/50">
-                            <CardTitle className="text-base font-medium flex items-center gap-2 text-blue-900">
-                                <DollarSign className="h-4 w-4 text-blue-600" />
-                                Smart Revenue Recovery
-                            </CardTitle>
-                            <CardDescription>AI-suggested clearance prices</CardDescription>
-                        </CardHeader>
-                        <CardContent className="pt-4">
-                            <div className="mb-4">
-                                <label className="text-xs font-semibold uppercase text-slate-500 mb-2 block">
-                                    Target Medicine
-                                </label>
-                                <Select value={pricingDrug} onValueChange={setPricingDrug}>
-                                    <SelectTrigger>
-                                        <SelectValue />
-                                    </SelectTrigger>
-                                    <SelectContent>
-                                        {drugKeys.slice(0, 5).map(k => <SelectItem key={k} value={k}>{k}</SelectItem>)}
-                                    </SelectContent>
-                                </Select>
-                            </div>
-
-                            <Table>
-                                <TableHeader>
-                                    <TableRow>
-                                        <TableHead className="h-8 text-xs">Discount</TableHead>
-                                        <TableHead className="h-8 text-xs">New Price</TableHead>
-                                        <TableHead className="h-8 text-xs text-right">Est. Rev</TableHead>
-                                    </TableRow>
-                                </TableHeader>
-                                <TableBody>
-                                    {pricingStrategies.map((s, i) => (
-                                        <TableRow key={i} className={s.discount_pct === 15 ? "bg-green-50" : ""}>
-                                            <TableCell className="font-medium text-xs">
-                                                {s.discount_pct}%
-                                                {s.discount_pct === 15 && <Badge variant="secondary" className="ml-1 text-[10px] h-4 px-1">Rec</Badge>}
-                                            </TableCell>
-                                            <TableCell className="text-xs">${s.price}</TableCell>
-                                            <TableCell className="text-xs font-bold text-green-700 text-right">
-                                                ${s.est_revenue}
-                                            </TableCell>
-                                        </TableRow>
-                                    ))}
-                                </TableBody>
-                            </Table>
-
-                            <div className="mt-4 p-3 bg-blue-50 rounded-md text-xs text-blue-800">
-                                <span className="font-bold">Insight:</span> 15% discount yields optimal revenue recovery for {pricingDrug} based on elasticity.
-                            </div>
-                        </CardContent>
-                    </Card>
-
                 </div>
             </div>
         </div>
