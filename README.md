@@ -2,7 +2,7 @@
 
 **Zenith Pharmacy Hub** is an advanced, AI-powered pharmacy management system designed to optimize inventory, reduce waste, forecast demand, and streamline billing operations. It integrates real-time analytics with smart forecasting to ensure critical medicines are always in stock while minimizing expiration losses.
 
-![Zenith Dashboard](https://via.placeholder.com/1200x600?text=Zenith+Pharmacy+Hub+Dashboard)
+
 
 ## 🚀 Key Features
 
