@@ -32,3 +32,8 @@ venv/
 .DS_Store
 *.sqlite
 *.db
+
+# Data Storage 
+backend/data/*.csv
+backend/data/*.json
+indian_pharmaceutical_products_clean.csv

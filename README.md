@@ -12,7 +12,7 @@
 - **Visual Analytics**: Interactive charts for demand trends and inventory health.
 
 ### 2. **AI-Powered Demand Forecasting** 📈
-- **Predictive Models**: 6-month demand forecasts using historical data and seasonal trends.
+- **ARIMA Predictive Models**: 90-day demand forecasts using AutoRegressive Integrated Moving Average (ARIMA) trained on historical prescription data.
 - **"Why?" Logic**: Explainable AI that tells you *why* demand is rising (e.g., "Winter season - higher respiratory infections").
 - **Smart Reordering**: Automated reorder schedules (High/Medium/Low priority) based on real-time stock vs. safety stock levels.
 - **Seasonal Analysis**: Visual impact of seasons (Winter vs. Summer demand multipliers).
@@ -39,7 +39,7 @@
 - **Frontend**: React (Vite), Tailwind CSS, Shadcn UI, Recharts, Lucide Icons.
 - **Backend**: Python (FastAPI), SQLAlchemy, Pydantic.
 - **Database**: PostgreSQL (Supabase).
-- **AI/ML**: Custom Python logic for seasonality and trend forecasting.
+- **AI/ML**: `statsmodels` implementation of ARIMA for time-series predictions, coupled with custom Python logic for seasonality and trend forecasting.
 - **Data Pipeline**: Python scripts for daily expiry sweeps and waste consolidation.
 
 ---
@@ -52,7 +52,7 @@ zenith-pharmacy-hub/
 │   ├── pages/              # Dashboard, Forecasting, Billing, WasteAnalysis
 │   ├── components/         # Reusable UI components
 │   └── lib/                # Utilities
-├── Demand forecasting/     # Python Backend & ML
+├── backend/                # Python Backend & ML
 │   ├── src/
 │   │   ├── api.py          # FastAPI Server (Port 8000)
 │   │   ├── db_direct.py    # Database Connection
@@ -73,7 +73,7 @@ zenith-pharmacy-hub/
 
 ### 1. Backend Setup
 ```bash
-cd "Demand forecasting/src"
+cd "backend/src"
 pip install -r requirements.txt
 # Set up your .env file with DB_CONNECTION_STRING
 python api.py

@@ -50,7 +50,7 @@ export default function Dashboard() {
       </div>
 
       {/* KPI Cards */}
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
         <KPICard
           title="Total Products"
           value={stats.totalProducts}
@@ -95,11 +95,7 @@ export default function Dashboard() {
         <a href="/outbreak" className="text-sm font-semibold text-blue-600 hover:text-blue-800 hover:underline">View Intel →</a>
       </div>
 
-      {/* Charts Section */}
-      <div className="grid gap-6 lg:grid-cols-1">
-        <DemandChart />
-        {/* <ReorderAlerts /> moved to Forecasting Page */}
-      </div>
+
     </div>
   );
 }
